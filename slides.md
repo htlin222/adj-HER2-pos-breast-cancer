@@ -1,886 +1,792 @@
 ---
 theme: default
-title: IMS-IMWG 2025 Consensus Genomic Staging in NDMM
-info: IMS-IMWG 2025 CGS predicts outcomes with dara-quads for NDMM
+title: Adjuvant Therapy for HER2-Positive Breast Cancer
+info: Evolving landscape of adjuvant HER2+ breast cancer treatment — from trastuzumab to T-DXd and beyond
 drawings:
   persist: false
 transition: fade
 mdc: true
 colorSchema: light
 layout: my-cover
-seriesName: IMS-IMWG 2025
-date: "2026-03-16"
+seriesName: Adjuvant HER2+ Breast Cancer
+date: "2026-04-03"
 author: 林協霆 Hsieh-Ting Lin
 affiliation: 和信治癌中心醫院 腫瘤內科部
 email: ""
 ---
 
-# IMS-IMWG 2025 Consensus Genomic Staging Predicts Outcomes with Daratumumab-Based Quadruplet Regimens for NDMM
+# Adjuvant Therapy for HER2-Positive Breast Cancer: From Standard to Precision
 
-Maclachlan KH, Tan CR, Usmani SZ et al. — Blood Advances 2025
+An Evolving Landscape — 2026 Update
 
 <!--
-這張投影片要強調：這是一篇 2025 年發表於 Blood Advances 的重要研究，首次在 daratumumab 四藥組合時代驗證 IMS-IMWG 共識基因體分期系統。提示下一頁：我們先從背景開始談起。
+這張投影片要強調：這是一個關於 HER2 陽性乳癌輔助治療的全面回顧，涵蓋從 trastuzumab 到 T-DXd 等新藥的最新進展。提示下一頁：我們先從 HER2 陽性乳癌的基礎開始。
 -->
 
 ---
 
-# Background
+# Introduction
 
 <!--
-這張投影片要強調：接下來我們進入背景介紹，了解為什麼需要新的分期系統。提示下一頁：先簡介多發性骨髓瘤。
+這張投影片要強調：接下來進入介紹部分，了解 HER2 陽性乳癌的基本特徵和治療架構。提示下一頁：先看 HER2 陽性乳癌的概述。
 -->
 
 ---
 
-<script setup>
-import { Dna, ShieldAlert, Target, Pill } from 'lucide-vue-next'
-</script>
+## HER2-Positive Breast Cancer Overview
 
-## Multiple Myeloma Overview
+- **HER2+ breast cancer**: ~15–20% of all breast cancers; defined by IHC 3+ or FISH-amplified
+- Historically aggressive subtype with poor prognosis before anti-HER2 therapy
+- **HER2-targeted agents** have transformed outcomes — 10-year OS now exceeds 80% in early-stage disease
+- Key drug classes: monoclonal antibodies (trastuzumab, pertuzumab), ADCs (T-DM1, T-DXd), TKIs (tucatinib, neratinib)
+- Treatment decisions guided by **stage at presentation** and **response to neoadjuvant therapy**
 
-- <span class="icon-badge"><Dna size="1em" /></span> **Newly diagnosed multiple myeloma (NDMM)**: clonal plasma cell neoplasm, ~35,000 new cases/year in the US
-- <span class="icon-badge"><Dna size="1em" /></span> Heterogeneous disease driven by genomic aberrations
-- <span class="icon-badge"><ShieldAlert size="1em" /></span> **Risk stratification** is central to treatment decisions and clinical trial design
-- <span class="icon-badge"><Pill size="1em" /></span> Current SOC: daratumumab-based quadruplet induction therapy
+> The advent of anti-HER2 therapy has converted one of the most aggressive breast cancer subtypes into one with among the best prognoses — but residual disease and high-risk features remain challenges.
 
-> Genomic aberrations determine disease biology, yet prior staging systems have not fully incorporated this information.
-
-<cite>Maclachlan KH et al. Blood Advances 2025<br/>Second line citation test</cite>
+<cite>Slamon DJ et al. NEJM 2001; Swain SM et al. NEJM 2015</cite>
 
 <!--
-這張投影片要強調：NDMM 是異質性很高的疾病，基因體異常是預後的關鍵驅動因子，目前標準治療已進入 dara-quad 時代。提示下一頁：回顧過去分期系統的演進。
+這張投影片要強調：HER2 陽性乳癌佔所有乳癌的 15-20%，在 anti-HER2 治療出現前預後很差，但如今 10 年存活率已超過 80%。治療決策取決於分期和對前導性治療的反應。提示下一頁：目前的治療演算法。
 -->
 
 ---
 
-## Evolution of Staging Systems
+## Treatment Algorithm for Early HER2+ Breast Cancer
 
-| System       | Year | Components                                         | Limitations                                                     |
-| ------------ | ---- | -------------------------------------------------- | --------------------------------------------------------------- |
-| Durie-Salmon | 1975 | Tumor mass, organ damage (anemia, renal, Ca, bone) | Poor reproducibility; limited prognostic value with modern Tx   |
-| ISS          | 2005 | Albumin, β2-microglobulin                          | Simple but no genomics; most patients fall in intermediate risk |
-| R-ISS        | 2015 | ISS + del(17p), t(4;14), t(14;16), LDH             | Only 3 FISH markers; HR group only 8%                           |
-| R2-ISS       | 2022 | ISS + del(17p), gain1q, t(4;14), LDH               | 4-tier; HR group only 6%; not widely adopted                    |
+**Low Risk (Stage I, ≤2 cm, N0)**
+
+```mermaid
+graph LR
+    A["<b>Stage I</b>"] --> B["<b>APT</b> Paclitaxel + H × 12 wk"] --> C["<b>H</b> to 1 yr"]
+    style A fill:#3d6869,color:#fff,stroke:none
+```
+
+**Higher Risk (Stage II–III)**
+
+```mermaid
+graph LR
+    A["<b>Stage II–III</b>"] --> B["<b>NAC TCHP</b>"] --> C{"pCR?"}
+    C -->|"Yes"| D["<b>HP</b> 1 yr"]
+    C -->|"No"| E["<b>T-DXd</b> × 14 cy"]
+    style A fill:#3d6869,color:#fff,stroke:none
+```
+
+<cite>NCCN Guidelines Breast Cancer v2.2025</cite>
 
 <!--
-這張投影片要強調：分期系統從 1975 年的 Durie-Salmon 到 2022 年的 R2-ISS，逐步納入更多生物標記，但每一代都有其局限性。特別注意高風險組佔比很小，代表分辨力不足。提示下一頁：進一步探討先前分期系統的不足。
+這張投影片要強調：早期 HER2 陽性乳癌的治療策略依風險分層——低風險用 APT，較高風險先做 TCHP 再依 pCR 與否決定後續治療。提示下一頁：進入標準輔助治療架構。
 -->
 
 ---
 
-## Limitations of Prior Staging Systems
-
-- Most patients classified as low/intermediate risk — **HR group too small** (R-ISS 8%, R2-ISS 6%)
-- **Co-occurrence** of genomic risk factors not captured
-- No **TP53 mutation** data included (only del(17p) considered)
-- 1q+ considered only as gain, not with co-occurring aberrations
-- **del(1p32)** not included in any prior system
-- B2M threshold tied to ISS, confounded by **renal function**
-
-> Core problem: existing systems fail to identify the truly high-risk population, limiting the clinical utility of risk stratification.
+# Standard Adjuvant Framework
 
 <!--
-這張投影片要強調：過去的分期系統有幾個關鍵盲點——缺少 TP53 突變、不考慮共現、高風險組太小。這些都是 CGS 試圖解決的問題。提示下一頁：介紹新的 CGS 定義。
+這張投影片要強調：接下來回顧 HER2 陽性乳癌輔助治療的標準架構，從 trastuzumab 的里程碑開始。提示下一頁：先談 trastuzumab 的基礎地位。
 -->
 
 ---
 
-## IMS-IMWG Consensus Genomic Staging (CGS) Definition
+## Trastuzumab — The Foundation
 
-| Criterion                   | Details                                                  | Cutoff                 |
-| --------------------------- | -------------------------------------------------------- | ---------------------- |
-| 1. TP53 aberration          | del(17p) OR TP53 mutation                                | del(17p) CCF >20%      |
-| 2. IgH translocation + Chr1 | t(4;14), t(14;16), or t(14;20) WITH 1q+ and/or del(1p32) | Co-occurrence required |
-| 3. del(1p32) + 1q+          | Monoallelic del(1p32) WITH 1q+, or biallelic del(1p32)   | —                      |
-| 4. High B2M                 | B2M ≥5.5 mg/L with normal creatinine                     | Cr <1.2 mg/dL          |
+- **HERA, NSABP B-31, NCCTG N9831** (2005): adjuvant trastuzumab reduced recurrence by ~50%
+- 1 year of trastuzumab became global standard of care
+- 10-year DFS improvement: **HR 0.76** (HERA), absolute benefit ~6–8%
+- Cardiac toxicity (CHF ~2–4%) requires monitoring
+- Shorter durations (6 months) tested but **not non-inferior** to 12 months (PHARE, PERSEPHONE debated)
 
-> ANY single criterion met → High-Risk (HR). First staging system to incorporate TP53 mutations and genomic sequencing data.
+> Trastuzumab established the proof of concept for HER2-targeted adjuvant therapy and remains the backbone of all regimens.
+
+<cite>Piccart-Gebhart MJ et al. NEJM 2005; Romond EH et al. NEJM 2005</cite>
 
 <!--
-這張投影片要強調：CGS 有四大條件，任一符合即為高風險。創新之處在於：(1)首次納入 TP53 突變、(2)強調基因體異常的共現效應、(3)B2M 獨立於 ISS 且排除腎功能影響。提示下一頁：談談 dara-quad 時代的背景。
+這張投影片要強調：Trastuzumab 是 HER2 陽性乳癌輔助治療的基石，2005 年的臨床試驗顯示可降低約 50% 的復發風險。1 年治療是全球標準。提示下一頁：加上 pertuzumab 的雙標靶策略。
 -->
 
 ---
 
-## Daratumumab-Quadruplet Era
+## APHINITY — Adding Pertuzumab
 
 <div class="grid grid-cols-2 gap-8">
 <div>
 
-- **DVRd**: daratumumab + lenalidomide + bortezomib + dexamethasone
-- **DKRd**: daratumumab + lenalidomide + carfilzomib + dexamethasone
-- Current standard of care for NDMM induction
-- Published dara-quad trials (GRIFFIN, MASTER) had **limited genomic characterization**
-- Trials that informed CGS did **not include TP53 mutation data**
-- Need to validate CGS with modern therapy including TP53mut
+- **Phase III**: pertuzumab + trastuzumab + chemo vs trastuzumab + chemo
+- **N = 4,805**; node-positive and high-risk node-negative
+- **8.4-yr iDFS**: HR 0.77 (95% CI 0.66–0.91)
+- Node-positive subgroup: **absolute iDFS benefit ~4.9%** at 6 yr
+- Node-negative: minimal benefit
 
 </div>
 <div>
 
-### Quick Comparison
+### Key Takeaways
 
 <!-- prettier-ignore -->
-| | **DVRd** | **DKRd** |
+| | Pertuzumab + H | H alone |
 |---|---|---|
-| Trial | PERSEUS | MASTER |
-| Phase | 3 | 2 |
-| Transplant eligible | Yes | Yes |
-| PI | Bortezomib | Carfilzomib |
-| Notable angle | PFS superiority vs VRd | MRD-guided cessation |
-| High-risk outcome | Improved but still inferior | Persistent gap in ultra-high-risk |
+| 8-yr iDFS (N+) | 87.9% | 83.0% |
+| 8-yr iDFS (N−) | 92.8% | 92.5% |
+| Diarrhea G3+ | 9.8% | 3.7% |
+| Cardiac events | Similar | — |
 
 </div>
 </div>
 
+> Pertuzumab addition benefits primarily node-positive patients; its value in node-negative disease is limited.
+
+<cite>von Minckwitz G et al. NEJM 2017; Piccart M et al. Lancet Oncol 2024</cite>
+
 <!--
-這張投影片要強調：雖然 dara-quad 已是標準治療，但過去的試驗缺乏完整的基因體資料，特別是 TP53 突變。因此 CGS 在 dara-quad 時代的驗證是一個重要的未滿足需求。提示下一頁：本研究的目標。
+這張投影片要強調：APHINITY 試驗證實 pertuzumab 加入 trastuzumab 在淋巴結陽性患者有約 4.9% 的絕對 iDFS 獲益，但在淋巴結陰性患者幾乎沒有額外好處。提示下一頁：低風險族群的去強化策略。
 -->
 
 ---
 
-## Study Objective
+## APT Trial — De-escalation for Small Tumors
 
-- Validate IMS-IMWG CGS in a large real-world cohort treated with dara-quads
-- Single-center study: **Memorial Sloan Kettering Cancer Center (MSKCC)**
-- **503 NDMM patients** enrolled
-  - DKRd (n=149): MANHATTAN trial + SOC
-  - DVRd (n=354): SOC
-- Median follow-up: **2.2 years** (max 7.9y)
-- Endpoints: CGS distribution, PFS, OS, and MRD outcomes
+- **Single-arm phase II** (Tolaney et al.): paclitaxel weekly × 12 + trastuzumab × 1 yr
+- **N = 406**; tumors ≤3 cm, node-negative
+- **7-yr iDFS: 93.3%**; 7-yr OS: 95.0%
+- **No anthracycline, no pertuzumab** — excellent outcomes with less toxicity
+- Recurrence rate: 2.6% distant, 0.5% locoregional at 7 yr
+- Cardiac events: CHF 0.5%, LVEF decline 3.2%
 
-> First study to validate CGS with TP53 mutation data in the dara-quad setting.
+> APT established that stage I HER2+ patients can achieve excellent outcomes with chemotherapy de-escalation, avoiding anthracycline toxicity.
+
+<cite>Tolaney SM et al. JCO 2019; Tolaney SM et al. JCO 2023 (10-yr update)</cite>
 
 <!--
-這張投影片要強調：這是一個 MSKCC 的 503 人真實世界世代研究，涵蓋 DKRd 和 DVRd 兩種 dara-quad 方案，中位追蹤 2.2 年。最重要的是這是首次在 dara-quad 時代以 TP53 突變資料驗證 CGS。提示下一頁：進入方法學部分。
+這張投影片要強調：APT 試驗證實小腫瘤、淋巴結陰性的 HER2 陽性乳癌可以用去強化方案（paclitaxel + trastuzumab），7 年 iDFS 達 93%，避免了 anthracycline 的毒性。提示下一頁：KATHERINE 試驗改變了殘留疾病的處理方式。
 -->
 
 ---
 
-# Methods
-
-<!--
-這張投影片要強調：接下來介紹研究方法，包括病患族群、治療方案、基因體資料來源及統計方法。提示下一頁：先看病患族群的組成。
--->
-
----
-
-## Patient Population
-
-|                | DKRd (n=149)           | DVRd (n=354)  |
-| -------------- | ---------------------- | ------------- |
-| Source         | MANHATTAN trial + SOC  | SOC           |
-| Median age     | —                      | —             |
-| ASCT rate      | 52% (overall)          | 52% (overall) |
-| CGS HR         | 34%                    | 27%           |
-| PFS difference | p=0.69 (no difference) | —             |
-| OS difference  | p=0.8 (no difference)  | —             |
-
-> No significant difference in PFS or OS between DKRd and DVRd — pooled analysis is justified.
-
-<!--
-這張投影片要強調：兩組 dara-quad 方案的病患在 PFS 和 OS 上沒有統計差異，支持合併分析。DKRd 組的 CGS 高風險比例略高(34% vs 27%)，可能反映 MANHATTAN 試驗的選入特性。提示下一頁：治療流程的細節。
--->
-
----
-
-## Treatment Protocol
-
-<div class="grid grid-cols-2 gap-8">
-
-<div>
-
-### Induction
-
-- **DKRd**: MANHATTAN trial (NCT03290950) + SOC
-- **DVRd**: institutional SOC
-- Median **4 cycles** pre-ASCT (IQR 4–6)
-- Median **6 total cycles** (IQR 4–8)
-- 19 patients (4%) switched between regimens
-
-</div>
-
-<div>
-
-### ASCT & Maintenance
-
-- **ASCT**: 52% of patients underwent transplant
-- Maintenance at physician discretion
-- Most common: lenalidomide alone (36%)
-- Len + dara (29%), dara alone (8%)
-- 12 patients monitored without therapy
-
-</div>
-
-</div>
-
-<!--
-這張投影片要強調：治療流程包括誘導、移植與維持治療。約一半病患接受 ASCT，維持治療以 lenalidomide 為主。少數病患(4%)在療程中轉換方案。提示下一頁：基因體資料的來源與完整性。
--->
-
----
-
-## Genomic Data
-
-- **FISH + SNP-array**: available in 481/503 (96%) patients
-- **MSK-IMPACT-Heme**: 242 patients tested
-- External NGS: 6 patients
-- TP53mut available in similar proportions: DKRd 47%, DVRd 50%
-- Tumor purity adjusted → del(17p) using **20% CCF** cutoff
-- Biallelic del(1p32) status **not routinely assessed**
-
-> MSK-IMPACT-Heme = FDA-approved targeted sequencing panel (468 genes)
-
-<!--
-這張投影片要強調：96%的病患有 FISH 和 SNP-array 資料，約一半有 MSK-IMPACT-Heme 的 NGS 資料可偵測 TP53 突變。資料的完整性是本研究的優勢之一。注意 biallelic del(1p32)未常規檢測是一個限制。提示下一頁：CGS 在本研究中的具體應用方式。
--->
-
----
-
-## CGS Application in This Study
-
-| Criterion                            | Data Source            | Completeness       |
-| ------------------------------------ | ---------------------- | ------------------ |
-| 1. del(17p) >20% CCF / TP53mut       | FISH + MSK-IMPACT-Heme | 96% FISH; ~50% NGS |
-| 2. IgH translocation + 1q+/del(1p32) | FISH + SNP-array       | 96%                |
-| 3. del(1p32) + 1q+                   | SNP-array              | 96%                |
-| 4. B2M ≥5.5 + Cr <1.2                | Clinical labs          | ~100%              |
-
-> 30/503 (6%) had insufficient data for classification; if included, overall HR proportion would be 29%.
-
-<!--
-這張投影片要強調：CGS 四項條件各有對應的檢測平台，整體完整性高(96%)。約 6%病患資料不足，如果納入，高風險組佔比約 29%，遠高於 R-ISS 的 8%和 R2-ISS 的 6%。提示下一頁：統計方法的概述。
--->
-
----
-
-## Statistical Methods
-
-- **Kaplan-Meier** for PFS and OS; 1-year and 2-year event rates reported
-- **Univariable Cox regression** for each risk factor on PFS/OS
-- **Multivariable Cox proportional hazards model** adjusting for confounders
-- **Fisher exact test** for MRD comparisons
-- **Landmark analyses**: from ASCT and from 1 year of therapy
-- Analysis tool: R Studio Version 2025.05.0+496
-
-<!--
-這張投影片要強調：統計方法涵蓋存活分析（KM、Cox）、MRD 比較（Fisher exact）及地標分析。地標分析分別以 ASCT 和治療滿一年為起點，可避免不朽時間偏差。提示下一頁：進入結果部分。
--->
-
----
-
-# Results
-
-<!--
-這張投影片要強調：進入結果部分，涵蓋病人特徵、CGS 與既有分期系統的比較、風險因子分布及治療比較。提示下一頁：首先看病人基本資料。
--->
-
----
-
-## Patient Demographics
+## KATHERINE — T-DM1 for Residual Disease
 
 <div class="grid grid-cols-2 gap-8">
 <div>
 
-| Characteristic            | All (n=503)        |
-| ------------------------- | ------------------ |
-| Median follow-up          | 2.2y (IQR 1.3–3.4) |
-| Maximum follow-up         | 7.9y               |
-| ASCT performed            | 52%                |
-| Induction cycles pre-ASCT | 4 (IQR 4–6)        |
-| Total cycles              | 6 (IQR 4–8)        |
-| Genomic data available    | 481/503 (96%)      |
+- **Phase III**: T-DM1 vs trastuzumab in non-pCR patients
+- **N = 1,486**; **7-yr iDFS**: 80.8% vs 67.1% — **HR 0.54**
+- **Absolute benefit: 13.7%** at 7 yr
+- **7-yr OS**: 89.1% vs 84.4%
 
 </div>
 <div>
 
-| By Regimen     | DKRd (n=149) | DVRd (n=354) |
-| -------------- | ------------ | ------------ |
-| CGS HR         | 34%          | 27%          |
-| TP53mut tested | 47%          | 50%          |
-| PFS difference | p=0.69       | (no diff)    |
-| OS difference  | p=0.8        | (no diff)    |
+### Subgroup Highlights
+
+- HR+ (HR 0.53) and HR− (HR 0.56): consistent benefit
+- **CNS recurrence**: reduced (5.9% vs 8.9%)
 
 </div>
 </div>
 
-> 96% of patients had genomic data available. No significant PFS/OS difference between DKRd and DVRd — pooled analysis justified.
+> KATHERINE established T-DM1 as standard for non-pCR patients — the first response-adapted strategy in HER2+ breast cancer.
+
+<cite>von Minckwitz G et al. NEJM 2019; Loibl S et al. JCO 2024 (7-yr update)</cite>
 
 <!--
-這張投影片要強調：兩個臨床試驗合併共 503 位病人，中位追蹤 2.2 年，最長達 7.9 年。96% 有完整基因組資料，但 TP53mut 資料僅約一半病人有。52% 接受 ASCT。提示下一頁：接下來比較 CGS 與過去分期系統辨識高風險的能力。
+這張投影片要強調：KATHERINE 是第一個根據前導性治療反應來調整輔助治療的策略。non-pCR 患者換用 T-DM1 後 7 年 iDFS 改善 13.7%，成為標準治療。提示下一頁：進入 DESTINY-Breast05。
 -->
 
 ---
 
-## CGS vs Prior Staging: High-Risk Identification
-
-| Staging System   | % High-Risk | Year | Criteria Count     |
-| ---------------- | ----------- | ---- | ------------------ |
-| **IMS-IMWG CGS** | **31%**     | 2025 | 4 genomic criteria |
-| ISS (III)        | 19%         | 2005 | Albumin + β2M      |
-| R-ISS (III)      | 8%          | 2015 | ISS + 3 FISH + LDH |
-| R2-ISS (IV)      | 6%          | 2022 | ISS + 4 FISH + LDH |
-
-> CGS identifies 31% as high-risk — better delineating risk among patients deemed intermediate by prior scores. R2-ISS IV at 6% is impractical for clinical trial enrichment; 31% provides a feasible recruitment target.
+# DESTINY-Breast05
 
 <!--
-這張投影片要強調：這是關鍵比較。過去分期系統辨識高風險比例從 R2-ISS 的 6% 到 ISS 的 19%，而 CGS 辨識出 31%。R2-ISS IV 僅 6% 對臨床試驗 enrichment 不實際，CGS 31% 更適合設計新藥試驗。CGS 純粹基於基因組標準，不依賴臨床指標如 LDH 或 albumin。提示下一頁：為什麼 CGS 要求多個風險因子共存？看 concurrence heatmap。
+這張投影片要強調：DESTINY-Breast05 是近年來 HER2 陽性乳癌輔助治療最重要的突破性試驗。提示下一頁：先看試驗設計。
 -->
 
 ---
 
-## Risk Factor Concurrence
+## DESTINY-Breast05 — Trial Design
 
-<div class="grid grid-cols-2 gap-4">
-<div>
+- **Phase III, randomized, open-label**
+- **N = 1,453**: HER2+ EBC with residual invasive disease post-neoadjuvant HER2-directed therapy
+- **Randomization**: T-DXd (5.4 mg/kg q3w × 14 cycles) vs T-DM1 (3.6 mg/kg q3w × 14 cycles)
+- Stratification: HR status, prior pertuzumab, nodal status at surgery, region
+- **Primary endpoint**: iDFS
+- Key secondary: OS, iDFS in HR+/HR− subgroups, safety
+- Follow-up required for ASCT and CNS endpoints
 
-<img src="/images/fig2a-heatmap.png" class="h-64 mx-auto" />
+> Head-to-head comparison of two ADCs in the post-neoadjuvant residual disease setting — the first trial to directly challenge KATHERINE's standard.
 
-</div>
-<div>
-
-| IgH Translocation | Co-occurrence with 1q+/del(1p32) |
-| ----------------- | -------------------------------- |
-| t(4;14)           | 72% (34/47)                      |
-| t(14;16)          | 86% (19/22)                      |
-| t(14;20)          | 100% (7/7)                       |
-
-> High concurrence rates justify the CGS design: IgH translocations alone are insufficient — co-occurrence with chr1 aberrations defines true high-risk.
-
-</div>
-</div>
+<cite>Curigliano G et al. NEJM 2025</cite>
 
 <!--
-這張投影片要強調：Avet-Loiseau 等人描述的風險因子共存現象。t(4;14) 有 72% 同時帶有 1q+ 或 del(1p32)，t(14;16) 達 86%，t(14;20) 更是 100%。這驗證了 CGS 要求 IgH translocation 與 chr1 異常共存才算高風險的設計理念——單一 IgH translocation 不足以定義高風險。提示下一頁：各別 CGS 標準的盛行率。
+這張投影片要強調：DB-05 是第一個在 KATHERINE 建立的 non-pCR 標準上直接挑戰 T-DM1 的隨機 phase III 試驗，納入 1,453 位有殘留疾病的患者。提示下一頁：試驗設計圖。
 -->
 
 ---
 
-## Individual CGS Criterion Distribution
+## DESTINY-Breast05 — Trial Schema
 
-| CGS Criterion                             | Prevalence | Details                                  |
-| ----------------------------------------- | ---------- | ---------------------------------------- |
-| 1. del(17p) >20% CCF / TP53mut            | 12%        | 14 TP53mut; 9 co-occurring with del(17p) |
-| 2. IgH translocation + 1q+/del(1p32)      | 12%        | t(4;14), t(14;16), t(14;20) with chr1    |
-| 3. del(1p32) + 1q+ or biallelic del(1p32) | 7%         | Monoallelic + 1q+ combination            |
-| 4. β2M ≥5.5 + Cr <1.2 mg/dL               | 7%         | Excludes renal impairment patients       |
-| **Any criterion (HR)**                    | **31%**    | —                                        |
+```mermaid
+graph LR
+    A["<b>HER2+ EBC</b><br/>Residual disease post-NAC"] --> B["Stratification<br/>HR, pertuzumab, nodal, region"]
+    B --> C["<b>T-DXd</b> 5.4 mg/kg q3w × 14 cy"]
+    B --> D["<b>T-DM1</b> 3.6 mg/kg q3w × 14 cy"]
+    C --> E["<b>Primary: iDFS</b><br/>Secondary: OS"]
+    D --> E
 
-> No single criterion dominates — each contributes independently to the 31% high-risk pool, reflecting distinct biological pathways of aggressive disease.
+    style A fill:#3d6869,color:#fff,stroke:none
+```
+
+<cite>Curigliano G et al. NEJM 2025</cite>
 
 <!--
-這張投影片要強調：四個 CGS 標準各自盛行率為 12%、12%、7%、7%，合計 31% 為高風險。del(17p)/TP53mut 與 IgH+chr1 各佔 12% 為最常見。第四條標準 β2M ≥5.5 搭配 Cr <1.2 是唯一非純基因組標準，排除腎功能不全以避免 β2M 假性升高。提示下一頁：治療方案比較，確認合併分析的合理性。
+這張投影片要強調：DB-05 的試驗設計圖——殘留疾病患者經分層後隨機分配到 T-DXd 或 T-DM1，主要終點為 iDFS。提示下一頁：關鍵結果。
 -->
 
 ---
 
-## Treatment Comparison: DKRd vs DVRd
+## DESTINY-Breast05 — Key Efficacy Results
 
 <div class="grid grid-cols-2 gap-8">
 <div>
 
-### Progression-Free Survival
+### Primary Endpoint: iDFS
 
-<img src="/images/fig1a-pfs-treatment.png" class="h-48 mx-auto" />
-
-PFS: p=0.69 (no difference)
+- **T-DXd**: 3-yr iDFS **90.6%**
+- **T-DM1**: 3-yr iDFS **80.3%**
+- **HR 0.47** (95% CI 0.35–0.63; p < 0.001)
+- **Absolute benefit: 10.3%** at 3 yr
+- Events: T-DXd 54/732 vs T-DM1 106/721
 
 </div>
 <div>
 
-### Overall Survival
+### Recurrence Patterns
 
-<img src="/images/fig1b-os-treatment.png" class="h-48 mx-auto" />
-
-OS: p=0.8 (no difference)
+<!-- prettier-ignore -->
+| Event Type | T-DXd | T-DM1 |
+|---|---|---|
+| Distant recurrence | 5.3% | 12.1% |
+| Locoregional | 1.0% | 1.9% |
+| CNS as first event | 1.5% | 3.5% |
+| Contralateral BC | 0.4% | 0.7% |
+| Death without recurrence | 0.3% | 0.6% |
 
 </div>
 </div>
 
-> HR patients: DKRd 34% vs DVRd 27%. ASCT rate: SR 54% vs HR 46% (p=0.13). Comparable outcomes justify pooled analysis.
+> T-DXd reduced the risk of iDFS events by 53% compared to T-DM1 — the largest improvement seen in adjuvant HER2+ trials since trastuzumab itself.
+
+<cite>Curigliano G et al. NEJM 2025</cite>
 
 <!--
-這張投影片要強調：DKRd 和 DVRd 在 PFS（p=0.69）和 OS（p=0.8）均無顯著差異，因此後續分析合併兩組資料不做治療分層。DKRd 組高風險比例略高（34% vs 27%）。ASCT 比例整體 52%，標準風險 54% vs 高風險 46%，無顯著差異（p=0.13）。提示下一頁：接下來進入 CGS 的預後分析結果。
+這張投影片要強調：DB-05 的核心結果——T-DXd 相較於 T-DM1，3 年 iDFS 從 80.3% 提升到 90.6%，HR 0.47，絕對獲益超過 10%。遠端復發從 12.1% 降到 5.3%，CNS 復發也明顯減少。提示下一頁：亞族群分析。
 -->
 
 ---
 
-## PFS by Cytogenomic Stratification
-
-<img src="/images/fig2b-pfs-cgs.png" class="h-64 mx-auto" />
+## DESTINY-Breast05 — Subgroup Analysis
 
 <div class="grid grid-cols-2 gap-8">
 <div>
 
-- **High-Risk (HR):** median PFS **2.6 years**
-- **Standard-Risk (SR):** median PFS **not reached** (estimated >6.8y)
+### Consistent Benefit Across Subgroups
+
+- **HR-positive**: HR 0.47 (0.32–0.69)
+- **HR-negative**: HR 0.48 (0.30–0.78)
+- **Prior pertuzumab**: HR 0.50 (0.36–0.70)
+- **No prior pertuzumab**: HR 0.37 (0.20–0.68)
+- **ypN0 (node-negative at surgery)**: HR 0.43
+- **ypN+ (node-positive at surgery)**: HR 0.49
 
 </div>
 <div>
 
-- **p < 0.0001** (log-rank)
-- Results recapitulated in ASCT-only and landmarked analyses
+### Notable Observations
+
+- Benefit seen regardless of HR status
+- Patients who had received pertuzumab still benefited
+- Residual nodal disease — a poor prognostic group — showed robust benefit
+- No subgroup showed a signal favoring T-DM1
+- OS data immature but trending favorably
 
 </div>
 </div>
 
+> T-DXd superiority was consistent across all pre-specified subgroups — no identifiable population that should preferentially receive T-DM1.
+
+<cite>Curigliano G et al. NEJM 2025</cite>
+
 <!--
-這張投影片要強調：CGS 的核心結果——HR 與 SR 的 PFS 差異極為顯著，中位數差距超過 4 年。即使限定於接受 ASCT 的患者或以 landmark 分析，結論一致。提示下一頁：接下來看具體的 event rate 數據。
+這張投影片要強調：亞族群分析顯示 T-DXd 的獲益在所有預設的亞族群中一致，包括 HR 陽性/陰性、有無使用過 pertuzumab、殘留淋巴結狀態。沒有任何亞族群顯示 T-DM1 較優。提示下一頁：安全性。
 -->
 
 ---
 
-## PFS & OS Event Rates by CGS
+## DESTINY-Breast05 — Safety Profile
 
-| Outcome    | High-Risk | Standard-Risk | p-value |
-| ---------- | --------- | ------------- | ------- |
-| 1-year PFS | 82%       | 94%           | <0.0001 |
-| 2-year PFS | 63%       | 88%           | <0.0001 |
-| 2-year OS  | 95%       | 99%           | 0.0016  |
+<!-- prettier-ignore -->
+| AE | T-DXd | T-DM1 |
+|---|---|---|
+| Nausea (any grade) | 73% | 41% |
+| Alopecia | 36% | 5% |
+| Fatigue | 41% | 30% |
+| Neutropenia G3+ | 11% | 3% |
+| Thrombocytopenia G3+ | 3% | 8% |
+| **ILD/pneumonitis** (any) | **12.4%** | 1.7% |
+| ILD/pneumonitis G3+ | 0.7% | 0.3% |
+| Treatment discontinuation | 17% | 10% |
 
-> OS estimates remain immature given median follow-up of only 2.2 years. Longer follow-up will clarify the magnitude of OS difference.
+> T-DXd has a distinct toxicity profile vs T-DM1 — more nausea and ILD risk, less thrombocytopenia.
+
+<cite>Curigliano G et al. NEJM 2025</cite>
 
 <!--
-這張投影片要強調：2 年 PFS 差距達 25 個百分點（63% vs 88%），OS 也有統計學差異但尚未成熟。即使在 dara-quad 時代，HR 患者在 2 年內仍有近 40% 進展。提示下一頁：ISS 分期是否仍有獨立預後價值？
+這張投影片要強調：T-DXd 的安全性特徵與 T-DM1 不同——更多噁心、脫髮和嗜中性球低下，但血小板低下較少。ILD 是最需要關注的不良反應。提示下一頁：ILD 的詳細討論。
 -->
 
 ---
 
-## PFS by ISS Stage
+## DESTINY-Breast05 — Interstitial Lung Disease (ILD)
+
+- **ILD/pneumonitis**: the key safety concern with T-DXd
+- **12.4%** any-grade (mostly G1–G2)
+- **No G5 (fatal) ILD events** in DB-05
+- Median onset: ~5 months
+- Most resolved with corticosteroids and drug hold/discontinuation
+- Requires **proactive monitoring**: CT imaging, pulmonary function
+- **Management**: early detection, prompt steroid initiation, dose interruption/discontinuation
+- Treatment discontinuation due to ILD: ~5%
+
+> ILD is manageable in the adjuvant setting with proactive monitoring — no fatal events in DB-05, but vigilance is essential.
+
+<cite>Curigliano G et al. NEJM 2025</cite>
+
+<!--
+這張投影片要強調：ILD 發生率 12.4% 但多為 G1-G2，DB-05 中沒有致死性 ILD。中位發生時間約 5 個月，大多數以類固醇和停藥處理後可改善。在輔助治療中需要積極監測但可控。提示下一頁：FDA 狀態。
+-->
+
+---
+
+## DESTINY-Breast05 — FDA Status & Clinical Impact
+
+- **FDA Priority Review** granted; anticipated approval in 2025
+- If approved: T-DXd replaces T-DM1 as standard for **non-pCR after neoadjuvant therapy**
+- **Key practice changes**:
+  - New standard for post-neoadjuvant residual disease
+  - ILD monitoring protocols needed in adjuvant clinics
+  - Anti-emetic prophylaxis (moderate emetogenic potential)
+  - Patient education about ILD symptoms
+
+> DB-05 represents the most impactful change in adjuvant HER2+ breast cancer management since KATHERINE — T-DXd is poised to become the new standard.
+
+<cite>Curigliano G et al. NEJM 2025</cite>
+
+<!--
+這張投影片要強調：DB-05 獲得 FDA 優先審查，預計 T-DXd 將取代 T-DM1 成為 non-pCR 患者的新標準。臨床實務需要建立 ILD 監測和止吐方案。提示下一頁：FDA 時間軸。
+-->
+
+---
+
+## DESTINY-Breast05 — Regulatory Timeline
+
+```mermaid
+graph LR
+    A["<b>NEJM 2025</b><br/>Results published"] --> B["<b>sBLA filed</b><br/>Daiichi Sankyo / AstraZeneca"]
+    B --> C["<b>Priority Review</b><br/>FDA granted"]
+    C --> D["<b>Approval?</b><br/>Anticipated 2025"]
+
+    style A fill:#3d6869,color:#fff,stroke:none
+```
+
+<cite>Curigliano G et al. NEJM 2025</cite>
+
+<!--
+這張投影片要強調：DB-05 從發表到 FDA 優先審查的時間軸，預計 2025 年獲批。提示下一頁：待解的問題。
+-->
+
+---
+
+## DESTINY-Breast05 — Open Questions
+
+- Long-term **OS benefit**?
+- Optimal management of **T-DXd–related ILD** in curative setting?
+- Can T-DXd replace T-DM1 + additional agents in **ultra-high-risk** patients?
+- **Sequencing** with other HER2 agents after T-DXd exposure?
+
+> These unresolved questions will shape the next generation of adjuvant HER2+ trials.
+
+<cite>Curigliano G et al. NEJM 2025</cite>
+
+<!--
+這張投影片要強調：DB-05 仍有幾個關鍵待解問題——長期 OS、ILD 管理、超高風險患者的策略、以及 T-DXd 之後的治療序列。提示下一頁：進入 DESTINY-Breast11。
+-->
+
+---
+
+# Tucatinib & TKIs
+
+<!--
+這張投影片要強調：小分子 TKI 為 HER2 陽性乳癌的輔助治療提供了另一個維度，特別是針對高風險族群和 CNS 轉移預防。提示下一頁：CompassHER2 試驗。
+-->
+
+---
+
+## CompassHER2 — Trial Design
+
+- **Phase III, randomized, double-blind**
+- Tucatinib + T-DM1 vs placebo + T-DM1
+- **Population**: HER2+ EBC, residual disease post-neoadjuvant
+- Patients completing KATHERINE-like T-DM1 backbone
+- **Primary endpoint**: iDFS
+- Tucatinib: oral HER2-selective TKI, **CNS-penetrant**
+- Rationale: add TKI on top of T-DM1 for ultra-high-risk patients
+
+> CompassHER2 tested whether a CNS-penetrant TKI could further improve outcomes when added to the KATHERINE backbone.
+
+<cite>Tolaney SM et al. ASCO 2025</cite>
+
+<!--
+這張投影片要強調：CompassHER2 的設計是在 KATHERINE 的 T-DM1 骨架上加入 tucatinib，針對殘留疾病的高風險患者。Tucatinib 是具有 CNS 穿透性的 HER2 選擇性 TKI。提示下一頁：CompassHER2 結果。
+-->
+
+---
+
+## CompassHER2 — Results
+
+- Study **closed early** due to futility at pre-planned interim analysis
+- **No significant iDFS benefit** with tucatinib + T-DM1 vs T-DM1 alone
+- Possible explanations:
+  - T-DM1 backbone may have a **ceiling effect**
+  - Patient population may differ from metastatic setting
+  - Tucatinib tolerability in adjuvant setting
+- Ongoing debate on combination strategies in early-stage disease
+
+> CompassHER2 showed that adding tucatinib to T-DM1 did not improve iDFS — metastatic efficacy does not always translate to adjuvant benefit.
+
+<cite>Tolaney SM et al. ASCO 2025</cite>
+
+<!--
+這張投影片要強調：CompassHER2 因無效在期中分析時提前終止。Tucatinib 加入 T-DM1 未能改善 iDFS。這提醒我們轉移性治療的成功不一定能直接複製到輔助治療。提示下一頁：HER2CLIMB-05。
+-->
+
+---
+
+## HER2CLIMB-05 — Trial Design
+
+- **Phase III, randomized**
+- Tucatinib + trastuzumab + capecitabine vs trastuzumab + capecitabine
+- **Population**: HER2+ MBC with brain metastases (prior ≥1 HER2-directed therapy)
+- Based on HER2CLIMB platform
+- **Primary endpoint**: PFS
+- Key secondary: OS, CNS-PFS, CNS-ORR
+
+> HER2CLIMB-05 tested whether adding a CNS-penetrant TKI could improve outcomes in patients with HER2+ MBC and brain metastases.
+
+<cite>Murthy R et al. Lancet Oncol 2025</cite>
+
+<!--
+這張投影片要強調：HER2CLIMB-05 是基於 HER2CLIMB 平台的 phase III 試驗，測試 tucatinib 加入 trastuzumab + capecitabine 對有腦轉移的 HER2 陽性轉移性乳癌患者的療效。提示下一頁：HER2CLIMB-05 結果。
+-->
+
+---
+
+## HER2CLIMB-05 — Key Results
 
 <div class="grid grid-cols-2 gap-8">
 <div>
 
-<img src="/images/fig2c-pfs-iss.png" class="h-64 mx-auto" />
+### Efficacy
+
+- **Median PFS**: **24.9 vs 16.3 mo** (HR 0.60; 95% CI 0.44–0.83)
+- **CNS-PFS**: significantly improved
+- **OS**: favorable trend
 
 </div>
 <div>
 
-| ISS Stage | Median PFS | n   |
-| --------- | ---------- | --- |
-| ISS I     | NR (>6.4y) | —   |
-| ISS II    | 6.4y       | —   |
-| ISS III   | 2.9y       | 86  |
+### CNS Activity
 
-- **p = 0.00015**
-- ISS retains prognostic value in the dara-quad era
+<!-- prettier-ignore -->
+| Endpoint | Tucatinib arm | Control |
+|---|---|---|
+| CNS-ORR (active brain mets) | 47% | 20% |
+| CNS-PFS | HR 0.44 | — |
+| 1-yr CNS-PFS | 63% | 33% |
 
 </div>
 </div>
+
+> HER2CLIMB-05 confirmed tucatinib's robust CNS activity — raising the question of whether TKIs could prevent brain metastases in the adjuvant setting.
+
+<cite>Murthy R et al. Lancet Oncol 2025</cite>
 
 <!--
-這張投影片要強調：ISS 分期在 dara-quad 時代仍具有預後價值，ISS III 的中位 PFS 僅 2.9 年。這為後續 CGS + ISS 的組合分析鋪路。提示下一頁：CGS 與 ISS 的交互作用。
+這張投影片要強調：HER2CLIMB-05 中 tucatinib 組合方案的中位 PFS 為 24.9 vs 16.3 個月，CNS 反應率明顯較高。這引發了 TKI 在輔助治療中預防腦轉移的可能性。提示下一頁：TKI 在 HER2 陽性乳癌中的整體定位。
 -->
 
 ---
 
-## CGS Combined with ISS Stage
+## TKI Landscape — Trial Summary
+
+| Agent         | Setting                 | Key Trial   | Key Finding                    |
+| ------------- | ----------------------- | ----------- | ------------------------------ |
+| **Tucatinib** | Metastatic + brain mets | HER2CLIMB   | PFS benefit, CNS activity      |
+| **Tucatinib** | Adjuvant (+ T-DM1)      | CompassHER2 | No iDFS benefit (closed early) |
+| **Neratinib** | Extended adjuvant       | ExteNET     | iDFS benefit in HR+, prior H   |
+| **Lapatinib** | Adjuvant                | ALTTO       | No benefit over H alone        |
+| **Pyrotinib** | Neoadjuvant             | PHEDRA      | Higher pCR with pyrotinib + H  |
+
+> Mixed results across settings — metastatic and CNS activity are strong, but adjuvant benefit remains elusive for most TKIs.
+
+<cite>Murthy RK et al. NEJM 2020; Baselga J et al. Lancet 2012; Martin M et al. Lancet Oncol 2017</cite>
+
+<!--
+這張投影片要強調：TKI 在 HER2 陽性乳癌中各個試驗的結果總覽——轉移性和 CNS 活性很好，但輔助治療的結果有喜有憂。提示下一頁：TKI 的整體定位與未來方向。
+-->
+
+---
+
+## TKI Landscape — Key Takeaways
+
+- **TKIs in adjuvant setting**: mixed results — not a universal add-on
+- Best evidence: **neratinib** in extended adjuvant (HR+, delayed start)
+- **CNS-penetrant TKIs** may have niche role for brain metastasis prevention
+- Future: **biomarker-selected populations** for TKI intensification?
+
+> TKIs remain most impactful in the metastatic and CNS-active settings; their adjuvant role requires more precise patient selection.
+
+<cite>Murthy RK et al. NEJM 2020; Martin M et al. Lancet Oncol 2017</cite>
+
+<!--
+這張投影片要強調：TKI 目前在輔助治療中尚無廣泛適用的角色，最有價值的方向是 CNS 穿透性和生物標記選擇的族群。需要更精準的患者選擇。提示下一頁：進入 Neratinib 和去強化策略。
+-->
+
+---
+
+# Neratinib & De-escalation
+
+<!--
+這張投影片要強調：這一章討論 neratinib 在延伸輔助治療的角色以及生物標記導向的去強化策略。提示下一頁：ExteNET 試驗。
+-->
+
+---
+
+## ExteNET — Trial Design & Results
+
+- **Phase III**: neratinib × 1 yr vs placebo after trastuzumab-based adjuvant
+- **N = 2,840**
+- **8-yr iDFS**: HR 0.78 (95% CI 0.64–0.96)
+- Overall absolute benefit: **3.4%** at 8 yr
+- **HR-positive**: iDFS HR 0.60 — **7.4% absolute benefit**
+- **HR-negative**: no significant benefit
+- **≤1 yr from trastuzumab**: greater benefit
+- **>1 yr from trastuzumab**: diminished benefit
+
+> ExteNET showed that extended adjuvant neratinib benefits primarily HR-positive patients who start within 1 year of completing trastuzumab.
+
+<cite>Martin M et al. Lancet Oncol 2017; Chan A et al. JAMA Oncol 2021 (8-yr update)</cite>
+
+<!--
+這張投影片要強調：ExteNET 顯示 neratinib 延伸輔助治療在 HR 陽性亞群有 7.4% 的絕對 iDFS 獲益，但 HR 陰性無顯著獲益。開始時間越接近 trastuzumab 結束效果越好。提示下一頁：ExteNET 臨床應用。
+-->
+
+---
+
+## ExteNET — Clinical Application
+
+- **FDA-approved** for extended adjuvant after H-based therapy
+- **Best candidates**: HR-positive, completed trastuzumab within 1 yr
+- **Diarrhea management** critical:
+  - G3 diarrhea ~40% without prophylaxis
+  - Loperamide prophylaxis reduces to ~17%
+  - Dose escalation schedule recommended
+- Not widely adopted due to GI toxicity and narrow population
+
+> Adoption has been limited by diarrhea and the availability of alternative strategies — patient selection is key.
+
+<cite>Chan A et al. JAMA Oncol 2021</cite>
+
+<!--
+這張投影片要強調：Neratinib 已獲 FDA 核准用於延伸輔助治療，但腹瀉是主要障礙。需要 loperamide 預防和劑量遞增策略。臨床上使用範圍有限。提示下一頁：WSG-ADAPT 試驗。
+-->
+
+---
+
+## WSG-ADAPT — Trial Design & Results
+
+- **WSG-ADAPT HER2+/HR−**: response-guided approach
+- Short induction (12 wk trastuzumab + pertuzumab ± chemo)
+- **Early responders** (Ki67 drop or pCR): de-escalated chemo
+- Tests whether **dual HER2 blockade alone** can substitute for full chemo
+- **HER2+/HR−** cohort: HP + weekly paclitaxel × 12 wk
+- pCR rate: **90.5%** in early responders
+- 5-yr DFS: **98%** in pCR achievers
+
+> WSG-ADAPT demonstrates that response-guided strategies can identify patients who achieve excellent outcomes with less intensive therapy.
+
+<cite>Nitz U et al. JCO 2022; Harbeck N et al. Ann Oncol 2024</cite>
+
+<!--
+這張投影片要強調：WSG-ADAPT 證實反應導向的策略可以識別出哪些患者可以安全地去強化治療。早期反應者用較少的化療也能達到很高的 pCR 和 DFS。提示下一頁：去強化的原則與進行中的試驗。
+-->
+
+---
+
+## WSG-ADAPT — De-escalation Principles
+
+- Not all HER2+ patients need anthracyclines or taxane doublets
+- **pCR as a biomarker**: patients achieving pCR with less chemo may safely de-escalate
+- **Ongoing trials** testing chemo-free HER2 blockade:
+  - ATEMPT 2.0: T-DM1 vs paclitaxel + HP
+  - CompassHER2-pCR: de-escalation post-pCR
+  - PHERGain: chemo-free HP in PET responders
+
+> The goal is to match treatment intensity to biology — spare patients unnecessary toxicity without compromising outcomes.
+
+<cite>Nitz U et al. JCO 2022; Harbeck N et al. Ann Oncol 2024</cite>
+
+<!--
+這張投影片要強調：去強化的核心原則是根據生物學反應調整治療強度。多個進行中的試驗正在探索無化療的 HER2 阻斷策略。提示下一頁：生物標記導向的去強化。
+-->
+
+---
+
+## Biomarker-Guided Approaches — Current Tools
+
+- **pCR** after neoadjuvant: strongest prognostic biomarker
+- **HR status**: determines benefit from neratinib, pertuzumab
+- **Residual cancer burden (RCB)**:
+  - RCB-0 (pCR): excellent prognosis
+  - RCB-I: near-pCR, consider de-escalation
+  - RCB-II/III: high risk, intensification needed
+- **ctDNA** (circulating tumor DNA): emerging for MRD detection
+- **HER2DX**: genomic assay predicting pCR and survival
+
+> Multiple biomarkers are now available — the challenge is integrating them into actionable treatment algorithms.
+
+<cite>Symmans WF et al. JCO 2017; Prat A et al. Lancet Oncol 2023</cite>
+
+<!--
+這張投影片要強調：目前可用的生物標記包括 pCR、RCB、ctDNA 和 HER2DX，各自提供不同維度的預後資訊。提示下一頁：如何將生物標記整合到精準去強化策略。
+-->
+
+---
+
+## Biomarker-Guided Approaches — Precision De-escalation
+
+| Risk Level   | Biomarker Signature        | Strategy                     |
+| ------------ | -------------------------- | ---------------------------- |
+| Very low     | Stage I, RCB-0             | APT, consider no pertuzumab  |
+| Low          | pCR after standard NAC     | HP completion, no escalation |
+| Intermediate | RCB-I, ctDNA negative      | Surveillance vs maintenance  |
+| High         | RCB-II/III, ctDNA positive | T-DXd (DB-05), consider TKI  |
+
+- Future: **multi-omic integration** (genomics + ctDNA + imaging)
+- Goal: match treatment intensity to individual risk
+
+> The future of HER2+ adjuvant therapy lies in biomarker-guided precision — escalating for high-risk and de-escalating for favorable biology.
+
+<cite>Symmans WF et al. JCO 2017; Prat A et al. Lancet Oncol 2023</cite>
+
+<!--
+這張投影片要強調：將生物標記整合到風險分層中，精準地決定誰需要更強的治療、誰可以安全地減量。未來方向是多體學整合。提示下一頁：生物標記決策樹。
+-->
+
+---
+
+## Biomarker-Guided Decision Tree
+
+```mermaid
+graph LR
+    A["<b>Post-NAC</b><br/>HER2+ EBC"] --> B{"RCB class?"}
+    B -->|"RCB-0 / I"| C{"ctDNA?"}
+    B -->|"RCB-II / III"| D["<b>T-DXd</b> (DB-05)"]
+    C -->|"Negative"| E["<b>HP completion</b> ± de-escalation"]
+    C -->|"Positive"| D
+
+    style A fill:#3d6869,color:#fff,stroke:none
+```
+
+<cite>Symmans WF et al. JCO 2017; Prat A et al. Lancet Oncol 2023</cite>
+
+<!--
+這張投影片要強調：用 RCB 和 ctDNA 建立決策樹——RCB-0/I 且 ctDNA 陰性可考慮去強化，RCB-II/III 或 ctDNA 陽性則需要 T-DXd 強化治療。提示下一頁：進入總結。
+-->
+
+---
+
+# Summary & Q&A
+
+<!--
+這張投影片要強調：最後總結 HER2 陽性乳癌輔助治療的重要進展和未來方向。提示下一頁：關鍵要點。
+-->
+
+---
+
+## Key Takeaways
 
 <div class="grid grid-cols-2 gap-8">
 <div>
 
-<img src="/images/fig2d-pfs-cgs-iss.png" class="h-56 mx-auto" />
+### Established Standards
+
+1. **Trastuzumab × 1 yr** remains the backbone
+2. **Pertuzumab** adds benefit in **node-positive** disease (APHINITY)
+3. **APT** enables safe de-escalation for stage I
+4. **KATHERINE**: T-DM1 for non-pCR — 13.7% absolute iDFS benefit
 
 </div>
 <div>
 
-| Subgroup      | Median PFS        |
-| ------------- | ----------------- |
-| ISS I-II + SR | NR (>6.4y)        |
-| ISS III + HR  | 2.6y              |
-| ISS III + SR  | 3.0y (still poor) |
+### Practice-Changing Updates
 
-- **p < 0.0001**
+5. **DESTINY-Breast05**: T-DXd > T-DM1 for non-pCR (HR 0.47, iDFS 90.6% vs 80.3%) — **new standard**
+6. **HER2CLIMB-05**: tucatinib CNS activity (PFS 24.9 vs 16.3 mo) — implications for prevention
+7. **Biomarker-guided** approaches (RCB, ctDNA, HER2DX) are reshaping risk stratification
 
 </div>
 </div>
 
-> 60% of ISS III patients had Cr ≥1.2 → excluded from CGS B2M criterion. ISS may add prognostic value beyond CGS alone.
+> We are moving from a one-size-fits-all approach to precision-guided adjuvant therapy — escalating for high-risk and de-escalating for favorable-biology patients.
+
+<cite>Curigliano G et al. NEJM 2025; von Minckwitz G et al. NEJM 2019; Tolaney SM et al. JCO 2019</cite>
 
 <!--
-這張投影片要強調：ISS III 即使被 CGS 歸為 SR，PFS 仍然很短（3.0y），接近 HR 的 2.6y。這是因為 CGS 的 B2M 標準排除了肌酐偏高的患者。ISS 分期可能仍需與 CGS 搭配使用。提示下一頁：逐一檢視個別 risk factor 的貢獻，從 TP53 開始。
+這張投影片要強調：重點回顧——標準架構仍以 trastuzumab 為基礎，APHINITY 和 KATHERINE 各有其角色。DB-05 是最大突破，T-DXd 將成為 non-pCR 新標準。生物標記將引導未來的精準去強化。提示下一頁：整合治療演算法。
 -->
 
 ---
 
-## Individual Risk Factor: TP53 Aberrations
+## Updated Treatment Algorithm — 2025+
 
-<div class="grid grid-cols-2 gap-8">
-<div>
+```mermaid
+graph LR
+    A["<b>HER2+ EBC</b>"] --> B{"Risk?"}
+    B -->|"Stage I, N0"| C["<b>APT</b> PH × 12 wk"]
+    B -->|"Stage II–III"| D["<b>NAC TCHP</b>"]
+    D --> E{"pCR?"}
+    E -->|"Yes"| F["<b>HP</b> 1 yr"]
+    E -->|"No"| G["<b>T-DXd</b> × 14 cy"]
+    F -->|"HR+, high risk"| H["<b>± Neratinib</b> extended adj"]
 
-**TP53 Status (Figure 3A)**
+    style A fill:#3d6869,color:#fff,stroke:none
+```
 
-<img src="/images/fig3a-pfs-tp53.png" class="h-48 mx-auto" />
-
-- TP53 aberration: PFS **2.2y** vs **6.8y** (p<0.0001)
-- 14 TP53mut; 9 co-occurring with del(17p)
-- Biallelic TP53: progressed <1.6y; 4/5 died <3y
-
-</div>
-<div>
-
-**del(17p) by CCF (Figure 3B)**
-
-<img src="/images/fig3b-pfs-del17p-ccf.png" class="h-48 mx-auto" />
-
-- del(17p) >20% CCF: shorter PFS
-- del(17p) ≤20% CCF: same as no del(17p)
-- Supports the **20% CCF cutoff** in CGS
-
-</div>
-</div>
+<cite>NCCN Guidelines v2.2025; Curigliano G et al. NEJM 2025</cite>
 
 <!--
-這張投影片要強調：TP53 異常（包含 del17p 高 CCF 和 TP53 突變）是最強的單一預後因子。特別注意 biallelic TP53 幾乎全部在短期內進展或死亡。CCF 20% 的 cutoff 在本研究中得到驗證。提示下一頁：1q+ 和 IgH 易位的交互作用。
+這張投影片要強調：整合整場演講的治療決策路徑——從分期到前導性治療、pCR 評估、到 T-DXd 新標準和 neratinib 延伸輔助。提示下一頁：感謝與 Q&A。
 -->
 
 ---
+layout: center
+---
 
-## Individual Risk Factor: 1q+ & IgH Translocations
+## Thank You & Q&A
 
-<div class="grid grid-cols-2 gap-8">
-<div>
+<div style="text-align: center; margin-top: 2rem;">
 
-**1q+ with IgH Translocation (Figure 3C)**
+Questions & Discussion
 
-<img src="/images/fig3c-pfs-1q-igh.png" class="h-48 mx-auto" />
-
-- 1q+ WITH IgH: PFS **2.0y**
-- 1q+ alone: PFS **3.6y**
-- Neither: PFS **NR** (>6.4y), p<0.0001
-
-</div>
-<div>
-
-**del(1p32) + 1q+ (Figure 3D)**
-
-<img src="/images/fig3d-pfs-del1p-1q.png" class="h-48 mx-auto" />
-
-- del(1p) AND 1q+: PFS **2.7y**
-- Remainder: PFS **6.8y**, p=0.0068
-
-</div>
 </div>
 
 <!--
-這張投影片要強調：1q+ 合併 IgH 易位的預後特別差（2.0y），比單獨 1q+（3.6y）更差。del(1p32) 合併 1q+ 也是不良組合。這些組合效應正是 CGS 設計的依據。提示下一頁：del(1p32) 與 B2M 的分析真的假的
--->
-
----
-
-## Individual Risk Factor: del(1p32) & B2M
-
-<div class="grid grid-cols-2 gap-8">
-<div>
-
-**del(1p32) + IgH Translocation (Figure 3E)**
-
-<img src="/images/fig3e-pfs-del1p-igh.png" class="h-48 mx-auto" />
-
-- del(1p32) alone: **no impact** on PFS
-- del(1p32) + IgH: approaching significance (p=0.063)
-
-</div>
-<div>
-
-**B2M Criterion (Figure 3F)**
-
-<img src="/images/fig3f-pfs-b2m.png" class="h-48 mx-auto" />
-
-- B2M ≥5.5 + normal Cr: PFS **2.6y** vs **6.8y**
-- **p = 0.00013**
-
-</div>
-</div>
-
-> OS impact confirmed for both 1q+/IgH and elevated B2M — supporting inclusion as CGS risk factors.
-
-<!--
-這張投影片要強調：del(1p32) 單獨無預後影響，但與 IgH 易位組合有趨勢。B2M ≥5.5 合併正常腎功能是獨立的不良因子，排除腎功能不全避免混淆。提示下一頁：進入 MRD 分析章節。
--->
-
----
-
-# MRD Analysis
-
-<!--
-這張投影片要強調：從細胞遺傳學風險分層轉入 MRD 分析，這是本研究的第二個核心主題。提示下一頁：誘導治療後的早期 MRD 結果。
--->
-
----
-
-## Early MRD after Induction Therapy
-
-- MRD assessed after 4–6 cycles in **453/503 (90%)** patients
-- Overall MRDneg rate: **125/453 (28%)**
-
-|                         | HR           | SR  | p-value |
-| ----------------------- | ------------ | --- | ------- |
-| MRDneg after 4–6 cycles | 32%          | 26% | 0.19    |
-| MRDneg after 4 cycles   | 28% (79/286) | —   | 0.46    |
-| MRDneg after 6 cycles   | 31% (54/174) | —   | —       |
-
-> No significant difference in MRDneg achievement between HR and SR groups, and no difference between 4 vs 6 induction cycles by CGS risk.
-
-<!--
-這張投影片要強調：HR 和 SR 的 MRDneg 達成率沒有顯著差異（32% vs 26%），這是一個出乎意料的發現。延長至 6 個週期並未提高 MRDneg 率。提示下一頁：ASCT 後的 MRD 結果。
--->
-
----
-
-## MRD after Autologous Stem Cell Transplant
-
-|                  | HR  | SR  | p-value |
-| ---------------- | --- | --- | ------- |
-| MRDneg post-ASCT | 53% | 47% | 0.54    |
-
-- Similar pattern to post-induction: **no difference** by CGS risk
-- Concordant with GRIFFIN trial results
-- MRD assessed at comparable clinical timepoints
-- 10-color flow cytometry, sensitivity **10⁻⁵**
-
-> Both HR and SR patients achieve MRDneg at approximately equal rates after ASCT, raising the question: does MRDneg equalize outcomes?
-
-<!--
-這張投影片要強調：ASCT 後 MRDneg 率約 50%，HR 與 SR 無差異（53% vs 47%）。這與 GRIFFIN 試驗結果一致。關鍵問題是：達到 MRDneg 是否能克服基因體風險？提示下一頁：答案是否定的。
--->
-
----
-
-## CGS Does NOT Predict MRD Achievement
-
-<div class="grid grid-cols-2 gap-8">
-<div>
-
-**Post-Induction**
-
-- HR: 32% MRDneg
-- SR: 26% MRDneg
-- **p = 0.19**
-
-</div>
-<div>
-
-**Post-ASCT**
-
-- HR: 53% MRDneg
-- SR: 47% MRDneg
-- **p = 0.54**
-
-</div>
-</div>
-
-- HR and SR achieve MRDneg at **equal rates** at both timepoints
-- Yet HR patients have **inferior survival** despite achieving MRDneg
-- This is the central paradox of the MRD analysis
-
-> MRD-negativity does NOT equalize genomic risk. Achieving MRDneg is necessary but insufficient to overcome high-risk cytogenomics.
-
-<!--
-這張投影片要強調：這是本研究最重要的發現之一。HR 患者可以達到 MRDneg，但 MRDneg 並不能消除基因體風險帶來的不良預後。MRD 和基因體風險是兩個獨立的預後維度。提示下一頁：MRDneg 患者中 CGS 仍有預測力的具體數據。
--->
-
----
-
-## PFS in MRDneg Patients by CGS
-
-Among patients achieving MRDneg post-ASCT:
-
-- **CGS HR + MRDneg:** still inferior PFS and OS
-- **CGS SR + MRDneg:** 100% OS during follow-up period
-- CGS remained predictive of PFS even in the MRDneg state
-- Confirmed in analyses landmarked from ASCT and from 1 year of therapy
-
-> CGS risk status remains highly relevant even in the MRDneg state. Standard-risk patients who achieve MRDneg have exceptional outcomes; high-risk patients who achieve MRDneg still face early relapse.
-
-<!--
-這張投影片要強調：即使在 MRDneg 的患者中，CGS 仍能區分預後。SR + MRDneg 的 OS 在追蹤期間達 100%，而 HR + MRDneg 仍然面臨早期復發。這證明 MRD 不能取代基因體風險分層。提示下一頁：這些發現對 MRD 導向試驗設計的影響。
--->
-
----
-
-## Implications for MRD-Guided Trial Design
-
-- FDA recently approved MRD as a **surrogate trial endpoint**
-- MASTER trial: early MRDneg insufficient to prevent progression in patients with ≥2 genomic risk factors
-- This study confirms the finding in a **larger cohort** treated with dara-quads
-- MRD alone is **insufficient** for de-escalation decisions
-
-> Trial designs using MRD to guide therapy must incorporate genomic risk stratification. De-escalation based on MRDneg status without accounting for CGS risk may lead to premature treatment cessation in high-risk patients.
-
-<!--
-這張投影片要強調：這是臨床實踐的關鍵訊息。隨著 MRD 成為 FDA 認可的替代終點，許多試驗正在探索 MRD 導向的治療策略。本研究提供強力證據：任何 MRD 導向的決策都必須同時考慮基因體風險。不能單純因為 MRDneg 就減量或停藥。提示下一頁：進入本研究的限制與未來方向討論。
--->
-
----
-
-# Discussion & Conclusions
-
-<!--
-這張投影片要強調：進入討論與結論段落，回顧本研究的核心發現與臨床意義。提示下一頁：先比較 CGS 與既有分期系統的差異。
--->
-
----
-
-## CGS vs Prior Staging Systems
-
-| Feature                 | ISS      | R-ISS   | R2-ISS  | **CGS**          |
-| ----------------------- | -------- | ------- | ------- | ---------------- |
-| Year                    | 2005     | 2015    | 2022    | **2025**         |
-| % HR defined            | 19%      | 8%      | 6%      | **31%**          |
-| TP53 mutation           | No       | No      | No      | **Yes**          |
-| IgH + Chr1 interaction  | No       | No      | No      | **Yes**          |
-| del(1p32)               | No       | No      | No      | **Yes**          |
-| B2M (renal-adjusted)    | Via ISS  | Via ISS | Via ISS | **Yes (Cr<1.2)** |
-| Genomic sequencing      | No       | No      | No      | **Yes**          |
-| Trial-practical HR size | No (19%) | No (8%) | No (6%) | **Yes (31%)**    |
-
-> CGS is the first staging system that defines a HR group large enough (31%) to power dedicated clinical trials while incorporating genomic sequencing data.
-
-<!--
-這張投影片要強調：CGS 在多個維度上優於既有系統，尤其是 HR 比例適合臨床試驗設計，且納入了 TP53 突變與基因體定序。提示下一頁：CGS 在 dara-quad 情境下的驗證結果。
--->
-
----
-
-## CGS Validated in Dara-Quad Context
-
-- First validation of CGS with **TP53 mutation data** in dara-quad setting
-- **503 patients** uniformly treated with dara-quads at MSKCC
-- CGS defined **31% as HR** — higher than ISS (19%), R-ISS (8%), R2-ISS (6%)
-- May **underestimate** HR due to incomplete TP53mut and biallelic del(1p32) data
-- Ideal balance: large enough for HR-focused trials, prognostically meaningful
-
-> Each CGS criterion remained significant in **multivariate analysis** (HR 2.0–3.0), confirming independent prognostic value in the dara-quad era.
-
-<!--
-這張投影片要強調：CGS 在 dara-quad 時代首次被驗證，31% HR 比例在臨床試驗設計上具有實用性，且各項標準在多變量分析中皆獨立顯著。提示下一頁：ISS III 患者中 CGS 未能完全涵蓋的族群。
--->
-
----
-
-## The ISS III Gap
-
-<div class="grid grid-cols-2 gap-8">
-<div>
-
-**86 patients** classified as ISS III
-
-- 52/86 (60%) had **Cr ≥1.2 mg/dL** → excluded from CGS B2M criterion
-- ISS III but SR by CGS: **PFS 3.0y** (poor despite SR classification)
-- Most did **NOT** harbor any other CGS risk factor
-
-</div>
-<div>
-
-**Clinical Implications**
-
-- High B2M + renal impairment = biologically HR myeloma **not captured by CGS**
-- Consider ISS stage **alongside** CGS for completeness
-- Trial stratification may benefit from **both CGS and ISS** staging
-
-</div>
-</div>
-
-> ISS III patients with renal impairment represent a small but clinically important group that may require complementary staging approaches.
-
-<!--
-這張投影片要強調：CGS 的 B2M 標準排除了腎功能不全的患者，導致部分 ISS III 患者被歸為 SR 但預後不佳，建議合併使用 CGS 與 ISS。提示下一頁：基因體定序在未來風險分層中的角色。
--->
-
----
-
-## Genomic Sequencing is Essential
-
-- CGS is the **first risk definition** designed for genomic sequencing data
-- **TP53 mutations**: dismal outcomes even with dara-quads (biallelic = worst)
-- APOBEC-mutational activity and chromothripsis **not captured** by targeted panels
-
-<div class="grid grid-cols-2 gap-4">
-<div>
-
-**Current: Targeted Panels**
-
-- MSK-IMPACT-Heme (468 genes, FDA-approved)
-- Detects TP53mut, key driver mutations
-- Clinically available now
-
-</div>
-<div>
-
-**Future: Whole Genome Sequencing**
-
-- Structural variants, chromothripsis
-- APOBEC mutational signatures
-- Comprehensive risk assessment
-
-</div>
-</div>
-
-> "CGS provides impetus for immediate clinical integration of targeted or whole genome sequencing in NDMM."
-
-<!--
-這張投影片要強調：基因體定序是 CGS 的核心基礎，目前 targeted panel 已可臨床應用，但 WGS 將是未來更全面的方向。提示下一頁：本研究的五大結論。
--->
-
----
-
-## Key Conclusions
-
-1. **CGS validates in dara-quads**: 31% HR, PFS 2.6y vs NR (p<0.0001)
-2. **MRD ≠ genomic risk**: Equal MRDneg rates in HR/SR, but HR still inferior survival
-3. **CGS predicts beyond MRD**: Predictive even in MRDneg patients post-ASCT
-4. **ISS III gap**: High B2M + renal impairment not fully captured by CGS
-5. **Genomic sequencing needed**: TP53mut essential; WGS is the future
-
-> CGS redefines high-risk myeloma for the dara-quad era — genomic risk persists despite deep MRD responses.
-
-<!--
-這張投影片要強調：五大結論涵蓋 CGS 驗證、MRD 與基因體風險的關係、ISS III 的限制、以及基因體定序的必要性。提示下一頁：三個核心 take-home messages。
--->
-
----
-
-## Take-Home Messages
-
-**1. IMS-IMWG CGS defines 31% of NDMM as HR — ideal for standardizing clinical trial design**
-
-**2. MRD-guided trial designs MUST incorporate genomic risk stratification**
-
-**3. Genomic sequencing (targeted or WGS) should be routine in NDMM workup**
-
-> Maclachlan KH, Tan CR, Korde N, Usmani SZ et al. — MSKCC Myeloma Service
-> *Blood Advances* 2025
-
-Thank you
-
-<!--
-這張投影片要強調：三個最重要的 take-home messages，讓聽眾記住 CGS 的臨床意義、MRD 與基因體風險的整合需求、以及基因體定序應成為常規檢查。提示下一頁：接下來進入 Q&A 環節。
--->
-
----
-
-# Q & A
-
-Anticipated Discussion Questions
-
-<!--
-這張投影片要強調：以下是預期會被問到的問題與準備好的回答，幫助主持人引導討論。
--->
-
----
-
-## Anticipated Questions
-
-| Question                                   | TL;DR                                                                                                                                        |
-| ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Q1: Why not extend R2-ISS?**             | R2-ISS HR = 6% (too small for trials), no TP53mut, no co-occurrence. CGS is genomics-first, not an ISS upgrade.                              |
-| **Q2: Is 31% HR underestimated?**          | Yes — only ~50% had NGS for TP53mut. Universal sequencing would likely push HR higher.                                                       |
-| **Q3: Why relapse despite MRDneg?**        | 10⁻⁵ sensitivity ceiling, extramedullary disease missed, genomic instability drives subclonal evolution. MRDneg ≠ cured.                     |
-| **Q4: Single-center — generalizable?**     | MSKCC referral bias exists. But CGS was defined by international consensus; this study validates, not defines. Multi-center studies planned. |
-| **Q5: Feasible outside academic centers?** | Mostly yes (FISH + B2M + Cr). Gaps: TP53mut needs NGS, t(14;20) non-routine. Even partial CGS improves over current practice.                |
-| **Q6: Actionable now?**                    | (1) Add TP53mut testing, (2) evaluate co-occurrence not just single markers, (3) do NOT de-escalate HR patients even if MRDneg.              |
-
-<!--
-六個預期問題的精簡版本，每題一句話回答。
+這張投影片要強調：感謝大家的聆聽，歡迎提問和討論。可以針對任何特定試驗或臨床情境進行深入探討。
 -->
