@@ -163,24 +163,18 @@ graph LR
 
 ## KATHERINE — T-DM1 for Residual Disease
 
-<div class="grid grid-cols-2 gap-8">
-<div>
+```mermaid
+graph LR
+    A["<b>Non-pCR</b>"] --> B{"Randomize"}
+    B --> C["<b>T-DM1</b> × 14 cy"]
+    B --> D["<b>Trastuzumab</b> × 14 cy"]
+    C --> E["7-yr iDFS 80.8%"]
+    D --> F["7-yr iDFS 67.1%"]
+    style A fill:#3d6869,color:#fff,stroke:none
+```
 
-- **Phase III**: T-DM1 vs trastuzumab in non-pCR patients
-- **N = 1,486**; **7-yr iDFS**: 80.8% vs 67.1% — **HR 0.54**
-- **Absolute benefit: 13.7%** at 7 yr
-- **7-yr OS**: 89.1% vs 84.4%
-
-</div>
-<div>
-
-### Subgroup Highlights
-
-- HR+ (HR 0.53) and HR− (HR 0.56): consistent benefit
-- **CNS recurrence**: reduced (5.9% vs 8.9%)
-
-</div>
-</div>
+- **N = 1,486**; **HR 0.54** — absolute benefit **13.7%** at 7 yr
+- HR+ (0.53), HR− (0.56): consistent; CNS recurrence reduced (5.9% vs 8.9%)
 
 > KATHERINE established T-DM1 as standard for non-pCR patients — the first response-adapted strategy in HER2+ breast cancer.
 
@@ -345,16 +339,21 @@ graph LR
 
 ## DESTINY-Breast05 — Interstitial Lung Disease (ILD)
 
-- **ILD/pneumonitis**: the key safety concern with T-DXd
-- **12.4%** any-grade (mostly G1–G2)
-- **No G5 (fatal) ILD events** in DB-05
-- Median onset: ~5 months
-- Most resolved with corticosteroids and drug hold/discontinuation
-- Requires **proactive monitoring**: CT imaging, pulmonary function
-- **Management**: early detection, prompt steroid initiation, dose interruption/discontinuation
-- Treatment discontinuation due to ILD: ~5%
+```mermaid
+graph LR
+    A["<b>Symptoms</b><br/>cough, dyspnea"] --> B["<b>CT + PFT</b>"]
+    B --> C["<b>Hold T-DXd</b>"]
+    C --> D["<b>Steroids</b>"]
+    D --> E{"Resolved?"}
+    E -->|"Yes"| F["Consider restart"]
+    E -->|"No"| G["Discontinue"]
+    style A fill:#3d6869,color:#fff,stroke:none
+```
 
-> ILD is manageable in the adjuvant setting with proactive monitoring — no fatal events in DB-05, but vigilance is essential.
+- **12.4%** any-grade (mostly G1–G2); **no G5 (fatal) events** in DB-05
+- Median onset ~5 months; discontinuation due to ILD ~5%
+
+> ILD is manageable with proactive monitoring — no fatal events in DB-05, but vigilance is essential.
 
 <cite>Curigliano G et al. NEJM 2025</cite>
 
@@ -525,13 +524,16 @@ graph LR
 
 ## TKI Landscape — Trial Summary
 
-| Agent         | Setting                 | Key Trial   | Key Finding                    |
-| ------------- | ----------------------- | ----------- | ------------------------------ |
-| **Tucatinib** | Metastatic + brain mets | HER2CLIMB   | PFS benefit, CNS activity      |
-| **Tucatinib** | Adjuvant (+ T-DM1)      | CompassHER2 | No iDFS benefit (closed early) |
-| **Neratinib** | Extended adjuvant       | ExteNET     | iDFS benefit in HR+, prior H   |
-| **Lapatinib** | Adjuvant                | ALTTO       | No benefit over H alone        |
-| **Pyrotinib** | Neoadjuvant             | PHEDRA      | Higher pCR with pyrotinib + H  |
+```mermaid
+graph LR
+    A["<b>HER2+ BC</b>"] --> B["Metastatic / CNS"]
+    A --> C["Adjuvant"]
+    A --> D["Neoadjuvant"]
+    B --> E["<b>Tucatinib</b> ✓"]
+    C --> F["Neratinib ✓ Tucatinib ✗ Lapatinib ✗"]
+    D --> G["<b>Pyrotinib</b> ✓"]
+    style A fill:#3d6869,color:#fff,stroke:none
+```
 
 > Mixed results across settings — metastatic and CNS activity are strong, but adjuvant benefit remains elusive for most TKIs.
 
@@ -591,12 +593,17 @@ graph LR
 
 ## ExteNET — Clinical Application
 
-- **FDA-approved** for extended adjuvant after H-based therapy
-- **Best candidates**: HR-positive, completed trastuzumab within 1 yr
-- **Diarrhea management** critical:
-  - G3 diarrhea ~40% without prophylaxis
-  - Loperamide prophylaxis reduces to ~17%
-  - Dose escalation schedule recommended
+```mermaid
+graph LR
+    A["<b>Post-H patient</b>"] --> B{"HR+?"}
+    B -->|"Yes"| C{"≤1 yr from H?"}
+    B -->|"No"| D["Not a candidate"]
+    C -->|"Yes"| E["<b>Neratinib</b> × 1 yr"]
+    C -->|"No"| D
+    style A fill:#3d6869,color:#fff,stroke:none
+```
+
+- **Diarrhea management** critical: G3 ~40% without prophylaxis → ~17% with loperamide
 - Not widely adopted due to GI toxicity and narrow population
 
 > Adoption has been limited by diarrhea and the availability of alternative strategies — patient selection is key.
@@ -631,12 +638,16 @@ graph LR
 
 ## WSG-ADAPT — De-escalation Principles
 
+```mermaid
+graph LR
+    A["<b>HP ± chemo</b><br/>12 wk induction"] --> B{"Early response?"}
+    B -->|"Yes (pCR)"| C["<b>De-escalate</b><br/>less chemo"]
+    B -->|"No"| D["<b>Standard</b><br/>full regimen"]
+    style A fill:#3d6869,color:#fff,stroke:none
+```
+
+- **Ongoing trials**: ATEMPT 2.0, CompassHER2-pCR, PHERGain (chemo-free HP)
 - Not all HER2+ patients need anthracyclines or taxane doublets
-- **pCR as a biomarker**: patients achieving pCR with less chemo may safely de-escalate
-- **Ongoing trials** testing chemo-free HER2 blockade:
-  - ATEMPT 2.0: T-DM1 vs paclitaxel + HP
-  - CompassHER2-pCR: de-escalation post-pCR
-  - PHERGain: chemo-free HP in PET responders
 
 > The goal is to match treatment intensity to biology — spare patients unnecessary toxicity without compromising outcomes.
 
