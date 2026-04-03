@@ -1,0 +1,32 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Slidev exports
+*.pdf
+*.pptx
+*.png
+!public/images/*.png
+!docs/gallery/*.png
+public/images/*.original.png
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment
+.env
+.env.local
+
+# Claude Code
+.agents/
+skills-lock.json
+.claude/settings.local.json
