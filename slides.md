@@ -756,23 +756,28 @@ graph LR
 
 ## Updated Treatment Algorithm — 2025+
 
+**Low Risk (Stage I, N0)**
+
 ```mermaid
 graph LR
-    A["<b>HER2+ EBC</b>"] --> B{"Risk?"}
-    B -->|"Stage I, N0"| C["<b>APT</b> PH × 12 wk"]
-    B -->|"Stage II–III"| D["<b>NAC TCHP</b>"]
-    D --> E{"pCR?"}
-    E -->|"Yes"| F["<b>HP</b> 1 yr"]
-    E -->|"No"| G["<b>T-DXd</b> × 14 cy"]
-    F -->|"HR+, high risk"| H["<b>± Neratinib</b> extended adj"]
+    A["<b>Stage I, N0</b>"] --> B["<b>APT</b> PH × 12 wk"] --> C["<b>H</b> to 1 yr"]
+    style A fill:#3d6869,color:#fff,stroke:none
+```
 
+**Higher Risk (Stage II–III)**
+
+```mermaid
+graph LR
+    A["<b>Stage II–III</b>"] --> B["<b>NAC TCHP</b>"] --> C{"pCR?"}
+    C -->|"Yes"| D["<b>HP</b> 1 yr ± Neratinib"]
+    C -->|"No"| E["<b>T-DXd</b> × 14 cy"]
     style A fill:#3d6869,color:#fff,stroke:none
 ```
 
 <cite>NCCN Guidelines v2.2025; Curigliano G et al. NEJM 2025</cite>
 
 <!--
-這張投影片要強調：整合整場演講的治療決策路徑——從分期到前導性治療、pCR 評估、到 T-DXd 新標準和 neratinib 延伸輔助。提示下一頁：感謝與 Q&A。
+這張投影片要強調：整合整場演講的治療決策路徑——低風險用 APT，較高風險做 TCHP 後依 pCR 決定 HP 或 T-DXd。提示下一頁：感謝與 Q&A。
 -->
 
 ---
