@@ -190,34 +190,37 @@ graph LR
 <div class="grid grid-cols-2 gap-4">
 <div>
 
-**Inclusion Criteria**
+**Inclusion / Patient Characteristics**
 
-- Stage II–III, operable or locally advanced HER2+ breast cancer
-- **N = 417**, randomized to 4 arms
-- No prior systemic therapy
+- Randomized, open-label, **phase II**
+- Treatment-naive women with HER2+ breast cancer
+- Operable, locally advanced, or inflammatory
+- **N = 417**, randomized 1:1:1:1
+- Stratified by disease type & HR status
 
 </div>
 <div>
 
-**Neoadjuvant Arms (4 cycles)**
+**Neoadjuvant Arms (4 cycles q3w)**
 
 - **A:** Docetaxel + trastuzumab (TH)
 - **B:** Docetaxel + trastuzumab + pertuzumab (THP)
 - **C:** Trastuzumab + pertuzumab (HP, no chemo)
 - **D:** Docetaxel + pertuzumab (TP)
+- Primary endpoint: **pCR** (ypT0/is)
 
 </div>
 </div>
 
-- Primary endpoint: **pCR** (ypT0/is) in the breast
+<cite>Gianni L et al. Lancet Oncol 2012 ([DOI](https://doi.org/10.1016/S1470-2045(11)70336-9))</cite>
 
 <!--
-NeoSphere was the pivotal phase II trial that established the rationale for adding pertuzumab to trastuzumab-based neoadjuvant therapy. The chemo-free arm (HP) achieved a modest but notable pCR rate. Next slide: results.
+這張投影片要強調：NeoSphere 是關鍵的 phase II 試驗，首次在術前治療中評估 pertuzumab 加入 trastuzumab 的療效。四組設計包含無化療組（HP），為雙標靶活性提供了概念驗證。提示下一頁：結果。
 -->
 
 ---
 
-## NeoSphere — Results
+## NeoSphere — Efficacy
 
 ```mermaid
 graph LR
@@ -227,51 +230,64 @@ graph LR
     style B fill:#3d6869,color:#fff,stroke:none
 ```
 
-- **THP (dual blockade + chemo)** achieved the highest pCR — **45.8% vs 29.0%** for TH alone (p=0.014)
-- Adding pertuzumab to docetaxel + trastuzumab nearly doubled pCR in HR− subgroup
-- Chemo-free arm (HP): pCR 16.8% — proof of concept for anti-HER2 activity without chemo
-- No significant increase in cardiac toxicity with dual blockade
-- 5-yr PFS and OS: trends favoring THP, but not powered for long-term endpoints
-
-<cite>Gianni L et al. Lancet Oncol 2012; Gianni L et al. Lancet Oncol 2016 (5-yr update)</cite>
+- **THP** achieved the highest pCR — **45.8% vs 29.0%** for TH alone (p=0.014)
+- HR− subgroup: pCR nearly doubled with pertuzumab
+- Chemo-free arm (HP): pCR 16.8% — proof of concept for anti-HER2 activity alone
+- 5-yr DFS/OS: trends favoring THP, but not powered for long-term endpoints
 
 <!--
-NeoSphere established that pertuzumab + trastuzumab + docetaxel achieves the highest pCR rate, forming the basis for the TCHP regimen. The chemo-free HP arm showed that dual anti-HER2 blockade alone has meaningful activity. This led to accelerated FDA approval of pertuzumab in the neoadjuvant setting. Next slide: KRISTINE trial.
+這張投影片要強調：THP 組達到最高 pCR 率，奠定了雙標靶加化療的基礎。HP 無化療組也有 16.8% pCR，證明雙標靶本身具有抗腫瘤活性。提示下一頁：安全性。
 -->
 
 ---
 
-## TRYPHAENA — Cardiac Safety of Pertuzumab Regimens
+## NeoSphere — Safety
 
-<div class="grid grid-cols-2 gap-4">
-<div>
+- **No significant increase in cardiac toxicity** with dual blockade
+- LVEF decline ≥10 pts to <50%: TH 5.6%, THP 4.7%, HP 1.0%, TP 3.8%
+- Symptomatic CHF: rare across all arms
+- Most common AEs in chemo-containing arms: **neutropenia, febrile neutropenia, diarrhea**
+- Chemo-free HP arm: markedly fewer grade ≥3 AEs
+- No treatment-related deaths
 
-**Inclusion Criteria**
-
-- Stage II–III, operable HER2+ breast cancer
-- **N = 225**, randomized to 3 arms
-- Primary endpoint: cardiac safety (LVEF decline, symptomatic CHF)
-
-</div>
-<div>
-
-**Neoadjuvant Arms (6 cycles)**
-
-- **Arm A:** FEC×3 → THP×3 (sequential)
-- **Arm B:** FEC+HP×3 → THP×3 (concurrent)
-- **Arm C:** **TCHP×6** (docetaxel, carboplatin, trastuzumab, pertuzumab)
-
-</div>
-</div>
-
-- Cardiac events low across all arms (≤5.6% LVEF decline ≥10 points)
-- **pCR rates: 57–66%** — Arm C (TCHP) achieved **63.6%**
-- Established **TCHP as a safe, anthracycline-free, platinum-based dual-blockade regimen**
-
-<cite>Schneeweiss A et al. Ann Oncol 2013</cite>
+<cite>Gianni L et al. Lancet Oncol 2012; Gianni L et al. Lancet Oncol 2016 (5-yr update) ([DOI](https://doi.org/10.1016/S1470-2045(15)00133-X))</cite>
 
 <!--
-這張投影片要強調：TRYPHAENA 是承先啟後的樞紐試驗。承先：NeoSphere 證明雙標靶（H+P）+ docetaxel（THP）可提升 pCR，但未加 carboplatin，且加藥勢必增加心毒性疑慮。TRYPHAENA 證明加入 carboplatin 的 TCHP 方案心臟安全性可接受、pCR 高達 63.6%、且不需 anthracycline，正式確立 TCHP 為標準術前方案。啟後：KRISTINE 以 TCHP 為標準對照，測試 T-DM1+P 能否取代（結果不行）；KATHERINE 則處理 TCHP 後仍有殘留病灶的患者（換用 T-DM1）。沒有 TRYPHAENA 確立 TCHP 的安全性與療效，後續兩個試驗的前提都不成立。提示下一頁：pCR 原始圖表。
+這張投影片要強調：雙標靶（H+P）不會顯著增加心臟毒性。HP 無化療組的嚴重不良事件最少。安全性數據支持將 pertuzumab 加入 trastuzumab 為基礎的術前治療。提示下一頁：TRYPHAENA 試驗。
+-->
+
+---
+
+## TRYPHAENA — Trial Design
+
+- **Phase II**, open-label, **N = 225**, HER2+ operable / locally advanced / inflammatory BC
+- Primary endpoint: **cardiac safety**
+
+```mermaid
+graph LR
+    A["<b>Arm A</b><br/>FEC+HP×3 → THP×3"] ~~~ B["<b>Arm B</b><br/>FEC×3 → THP×3"]
+    B ~~~ C["<b>Arm C</b><br/>TCHP×6"]
+    style C fill:#3d6869,color:#fff,stroke:none
+```
+
+<cite>Schneeweiss A et al. Ann Oncol 2013 ([DOI](https://doi.org/10.1093/annonc/mdt182))</cite>
+
+<!--
+這張投影片要強調：TRYPHAENA 是 phase II 試驗，測試三種含 pertuzumab 方案的心臟安全性。Arm C（TCHP）為無 anthracycline 方案。提示下一頁：療效與安全性結果。
+-->
+
+---
+
+## TRYPHAENA — Efficacy & Safety
+
+- **pCR (ypT0/is):** Arm A **61.6%**, Arm B **57.3%**, Arm C **66.2%**
+- Cardiac events low: LVEF decline ≥10 pts to <50%: A 5.6% / B 5.3% / C **3.9%**
+- Symptomatic LVSD: 2.7% (Arm B only)
+- Most common AE: **diarrhea**; Arm C had lowest cardiac toxicity
+- **TCHP established as a safe, anthracycline-free, platinum-based dual-blockade regimen**
+
+<!--
+這張投影片要強調：TRYPHAENA 是承先啟後的樞紐試驗。承先：NeoSphere 證明 THP 可提升 pCR，但未加 carboplatin。TRYPHAENA 證明 TCHP 心臟安全性可接受、pCR 最高（66.2%）、且不需 anthracycline。啟後：KRISTINE 以 TCHP 為標準對照；KATHERINE 處理 TCHP 後殘留病灶。提示下一頁：pCR 原始圖表。
 -->
 
 ---
@@ -293,41 +309,65 @@ NeoSphere established that pertuzumab + trastuzumab + docetaxel achieves the hig
 <div class="grid grid-cols-2 gap-4">
 <div>
 
-**Inclusion Criteria**
+**Inclusion / Patient Characteristics**
 
-- Stage II–III HER2+ breast cancer
-- Operable, **N = 444**
-- No prior systemic therapy
+- Randomized, open-label, **phase III**
+- Age ≥18, centrally confirmed HER2+
+- Stage II–III, tumor >2 cm, ECOG 0–1
+- Baseline LVEF ≥55%
+- **N = 444**, stratified by HR, stage, region
 
 </div>
 <div>
 
-**Randomization (Neoadjuvant)**
+**Neoadjuvant Arms (6 cycles q3w)**
 
-- **Arm A:** TCH+P (docetaxel, carboplatin, trastuzumab, pertuzumab) × 6 cy
-- **Arm B:** T-DM1 + P (trastuzumab emtansine + pertuzumab) × 6 cy
+- **Arm A:** TCHP (docetaxel, carboplatin, trastuzumab, pertuzumab)
+- **Arm B:** T-DM1 + P (trastuzumab emtansine + pertuzumab)
 - Primary endpoint: **pCR** (ypT0/is ypN0)
 
 </div>
 </div>
 
+<cite>Hurvitz SA et al. Lancet Oncol 2018 ([DOI](https://doi.org/10.1016/S1470-2045(17)30716-7))</cite>
+
 <!--
-這張投影片要強調：KRISTINE 是一個在術前治療階段比較「化療+雙標靶（TCHP）」與「T-DM1+P（去化療方案）」的隨機 phase III 試驗。目的是測試能否用 ADC 取代傳統化療達到相同的 pCR（病理完全反應）率。提示下一頁：KRISTINE 結果。
+這張投影片要強調：KRISTINE 是在術前治療階段比較「化療+雙標靶（TCHP）」與「T-DM1+P（去化療方案）」的隨機 phase III 試驗。收案要求 LVEF ≥55%、ECOG 0-1。目的是測試能否用 ADC 取代傳統化療。提示下一頁：結果。
 -->
 
 ---
 
-## KRISTINE — Results
+## KRISTINE — Efficacy
 
-- **pCR rate:** TCHP **56.0%** vs T-DM1+P **44.4%** (difference −11.3%, p=0.016)
-- TCHP achieved significantly higher pCR — **T-DM1+P cannot replace chemo + dual anti-HER2**
-- HR−/HER2+ subgroup: difference even larger (−19.0%)
-- HR+/HER2+ subgroup: difference −8.6%
-- T-DM1+P arm had fewer grade ≥3 AEs (fewer haematologic toxicities)
-- **3-yr EFS:** similar between arms (~90%), suggesting non-pCR patients could still benefit from subsequent therapy
+- **pCR (ypT0/is ypN0):** TCHP **55.7%** (123/221) vs T-DM1+P **44.4%** (99/223)
+- Difference −11.3% (95% CI −20.5 to −2.0; **p=0.016**)
+- HR−/HER2+ subgroup: difference −19.0% | HR+/HER2+: −8.6%
+- **3-yr EFS:** similar between arms (~90%)
 
 <!--
-這張投影片要強調：KRISTINE 結果顯示 T-DM1+P 的 pCR 率顯著低於 TCHP，證明在術前治療階段 ADC 無法完全取代化療+雙標靶。但毒性較低，且長期預後相近，暗示殘留疾病患者可透過後續治療（如 KATHERINE 策略）彌補。提示下一頁：原始圖表。
+這張投影片要強調：TCHP 的 pCR 顯著優於 T-DM1+P，ADC 無法取代傳統化療+雙標靶。但長期 EFS 相近，暗示 non-pCR 患者可透過後續治療彌補。提示下一頁：安全性。
+-->
+
+---
+
+## KRISTINE — Safety
+
+<!-- prettier-ignore -->
+| AE (Grade 3–4) | TCHP (n=219) | T-DM1+P (n=223) |
+|---|---|---|
+| Any G3–4 AE | **64%** | **13%** |
+| Any serious AE | 29% | 5% |
+| Neutropenia | 25% | <1% |
+| Febrile neutropenia | 15% | 0% |
+| Diarrhea | 15% | <1% |
+| Thrombocytopenia | 5% | 1% |
+| ALT increase | 2% | 1% |
+
+- No treatment-related deaths in either arm
+- T-DM1+P had a **markedly better tolerability profile**
+
+<!--
+這張投影片要強調：TCHP 的 G3-4 不良事件率（64%）遠高於 T-DM1+P（13%），尤其是嗜中性球低下和發燒性嗜中性球低下。T-DM1+P 雖然 pCR 較低，但耐受性顯著較好。提示下一頁：原始圖表。
 -->
 
 ---
@@ -375,7 +415,7 @@ NeoSphere established that pertuzumab + trastuzumab + docetaxel achieves the hig
 
 ---
 
-## KATHERINE — T-DM1 for Residual Disease
+## KATHERINE — Efficacy
 
 ```mermaid
 graph LR
@@ -387,15 +427,38 @@ graph LR
     style A fill:#3d6869,color:#fff,stroke:none
 ```
 
-- **N = 1,486**; **HR 0.54** — absolute benefit **13.7%** at 7 yr
+- **N = 1,486**; phase III, open-label
+- **3-yr iDFS**: 88.3% vs 77.0% (**HR 0.50**, p<0.001) — initial publication
+- **7-yr iDFS**: 80.8% vs 67.1% (**HR 0.54**) — absolute benefit **13.7%**
 - HR+ (0.53), HR− (0.56): consistent; CNS recurrence reduced (5.9% vs 8.9%)
 
-> KATHERINE established T-DM1 as standard for non-pCR patients — the first response-adapted strategy in HER2+ breast cancer.
-
-<cite>von Minckwitz G et al. NEJM 2019; Loibl S et al. JCO 2024 (7-yr update)</cite>
+<cite>von Minckwitz G et al. NEJM 2019 ([DOI](https://doi.org/10.1056/NEJMoa1814017)); Loibl S et al. JCO 2024 (7-yr update)</cite>
 
 <!--
-這張投影片要強調：KATHERINE 是第一個根據前導性治療反應來調整輔助治療的策略。non-pCR（病理完全反應，pathological Complete Response）患者換用 T-DM1 後 7 年 iDFS（無侵犯性疾病存活，invasive Disease-Free Survival）改善 13.7%，成為標準治療。提示下一頁：原始圖表。
+這張投影片要強調：KATHERINE 是第一個根據前導性治療反應來調整輔助治療的策略。初始發表 HR 0.50，7 年更新 HR 0.54，絕對 iDFS 獲益 13.7%。HR 陽性和 HR 陰性亞群獲益一致。提示下一頁：安全性。
+-->
+
+---
+
+## KATHERINE — Safety
+
+<!-- prettier-ignore -->
+| AE | T-DM1 (n=740) | Trastuzumab (n=720) |
+|---|---|---|
+| Any G3+ AE | 25.7% | 15.4% |
+| Thrombocytopenia (any) | 29.1% | 2.4% |
+| Thrombocytopenia G3+ | 5.7% | 0.3% |
+| Peripheral neuropathy | 18.6% | 6.9% |
+| AST/ALT elevation | 22.6% / 18.2% | 4.3% / 3.5% |
+| Hemorrhage | 29.2% | 10.5% |
+| Cardiac (LVEF decline) | 5.8% | 5.3% |
+
+- T-DM1 had more thrombocytopenia, hepatotoxicity, and neuropathy
+- No significant increase in cardiac events vs trastuzumab alone
+- Discontinuation due to AE: T-DM1 18% vs trastuzumab 2.1%
+
+<!--
+這張投影片要強調：T-DM1 的主要不良反應為血小板低下、肝毒性和周邊神經病變，但心臟毒性未顯著增加。停藥率 T-DM1 為 18%，顯著高於 trastuzumab。提示下一頁：原始圖表。
 -->
 
 ---
@@ -407,7 +470,7 @@ graph LR
 <cite>von Minckwitz G et al. NEJM 2019 — Figure 1A: Invasive Disease–Free Survival (ITT Population)</cite>
 
 <!--
-這張投影片要強調：這是 KATHERINE 試驗的原始 iDFS（無侵犯性疾病存活，invasive Disease-Free Survival）Kaplan-Meier 曲線，視覺化呈現 T-DM1 相較於 trastuzumab 的顯著獲益。請替換為原始圖片。提示下一頁：進入 DESTINY-Breast05。
+這張投影片要強調：這是 KATHERINE 試驗的原始 iDFS Kaplan-Meier 曲線，視覺化呈現 T-DM1 相較於 trastuzumab 的顯著獲益。提示下一頁：進入 DESTINY-Breast05。
 -->
 
 ---
@@ -420,22 +483,52 @@ graph LR
 
 ---
 
-## DESTINY-Breast05 — Trial Design
+## DESTINY-Breast05 — Inclusion Criteria
 
-- **Phase III, randomized, open-label**
-- **N = 1,453**: HER2+ EBC with residual invasive disease post-neoadjuvant HER2-directed therapy
-- **Randomization**: T-DXd (5.4 mg/kg q3w × 14 cycles) vs T-DM1 (3.6 mg/kg q3w × 14 cycles)
-- Stratification: HR status, prior pertuzumab, nodal status at surgery, region
-- **Primary endpoint**: iDFS
-- Key secondary: OS, iDFS in HR+/HR− subgroups, safety
-- Follow-up required for ASCT and CNS endpoints
+<div class="grid grid-cols-2 gap-4">
+<div>
 
-> Head-to-head comparison of two ADCs in the post-neoadjuvant residual disease setting — the first trial to directly challenge KATHERINE's standard.
+**HER2 Confirmation & Prior Therapy**
+
+- Centrally confirmed HER2+ (IHC 3+ or ISH+, per 2018 ASCO-CAP)
+- Completed neoadjuvant: **≥9 wk taxane-based chemo + ≥9 wk trastuzumab** (± pertuzumab)
+- ECOG PS 0–1
+- **≤12 weeks** from last surgery to randomization
+- **N = 1,453** — the largest post-neoadjuvant HER2+ trial
+
+</div>
+<div>
+
+**High-Risk Residual Disease**
+
+- **Inoperable at presentation:** cT4N0-3M0 or cT1-3N2-3M0
+- **Operable at presentation:** cT1-3N0-1M0, but with **ypN1-3** (node-positive after NAC)
+- All patients: residual invasive disease in breast or axilla
+
+</div>
+</div>
+
 
 <cite>Curigliano G et al. NEJM 2025</cite>
 
 <!--
-這張投影片要強調：DB-05 是第一個在 KATHERINE 建立的 non-pCR（病理完全反應，pathological Complete Response）標準上直接挑戰 T-DM1 的隨機 phase III 試驗，納入 1,453 位有殘留疾病的患者。提示下一頁：試驗設計圖。
+這張投影片要強調：DB-05 的收案條件非常精確——需要中央確認 HER2 陽性、完成至少 9 週 taxane 化療和 9 週 trastuzumab、ECOG 0-1、且手術後 12 週內隨機分組。高風險定義包括初始無法手術的患者和術前治療後仍有淋巴結陽性的患者。提示下一頁：試驗設計圖。
+-->
+
+---
+
+## DESTINY-Breast05 — Trial Design
+
+- **Phase III, randomized, open-label, international**
+- **T-DXd** (5.4 mg/kg q3w × 14 cy) vs **T-DM1** (3.6 mg/kg q3w × 14 cy)
+- Stratification: HR status, prior pertuzumab, nodal status at surgery, region
+- **Primary endpoint**: iDFS
+- Key secondary: OS, iDFS in HR+/HR− subgroups, safety
+
+<cite>Curigliano G et al. NEJM 2025</cite>
+
+<!--
+這張投影片要強調：DB-05 是第一個在 KATHERINE 建立的 non-pCR 標準上直接挑戰 T-DM1 的隨機 phase III 試驗。提示下一頁：試驗設計圖。
 -->
 
 ---
@@ -633,25 +726,6 @@ graph LR
 
 ---
 
-## DESTINY-Breast05 — Regulatory Timeline
-
-```mermaid
-graph LR
-    A["<b>NEJM 2025</b><br/>Results published"] --> B["<b>sBLA filed</b><br/>Daiichi Sankyo / AstraZeneca"]
-    B --> C["<b>Priority Review</b><br/>FDA granted"]
-    C --> D["<b>Approval?</b><br/>Anticipated 2025"]
-
-    style A fill:#3d6869,color:#fff,stroke:none
-```
-
-<cite>Curigliano G et al. NEJM 2025</cite>
-
-<!--
-這張投影片要強調：DB-05 從發表到 FDA（美國食品藥物管理局）優先審查的時間軸，預計 2025 年獲批。提示下一頁：待解的問題。
--->
-
----
-
 ## DESTINY-Breast05 — Open Questions
 
 - Long-term **OS benefit**?
@@ -667,112 +741,10 @@ graph LR
 這張投影片要強調：DB-05 仍有幾個關鍵待解問題——長期 OS（整體存活，Overall Survival）、ILD（間質性肺病，Interstitial Lung Disease）管理、超高風險患者的策略、以及 T-DXd 之後的治療序列。提示下一頁：進入 DESTINY-Breast11。
 -->
 
----
-
-# Tucatinib & TKIs
-
-<!--
-這張投影片要強調：小分子 TKI（酪氨酸激酶抑制劑）為 HER2 陽性乳癌的輔助治療提供了另一個維度，特別是針對高風險族群和 CNS（中樞神經系統）轉移預防。提示下一頁：CompassHER2 試驗。
--->
 
 ---
 
-## CompassHER2 — Trial Design
-
-- **Phase III, randomized, double-blind**
-- Tucatinib + T-DM1 vs placebo + T-DM1
-- **Population**: HER2+ EBC, residual disease post-neoadjuvant
-- Patients completing KATHERINE-like T-DM1 backbone
-- **Primary endpoint**: iDFS
-- Tucatinib: oral HER2-selective TKI, **CNS-penetrant**
-- Rationale: add TKI on top of T-DM1 for ultra-high-risk patients
-
-> CompassHER2 tested whether a CNS-penetrant TKI could further improve outcomes when added to the KATHERINE backbone.
-
-<cite>Tolaney SM et al. ASCO 2025</cite>
-
-<!--
-這張投影片要強調：CompassHER2 的設計是在 KATHERINE 的 T-DM1 骨架上加入 tucatinib，針對殘留疾病的高風險患者。Tucatinib 是具有 CNS（中樞神經系統）穿透性的 HER2 選擇性 TKI（酪氨酸激酶抑制劑）。提示下一頁：CompassHER2 結果。
--->
-
----
-
-## CompassHER2 — Results
-
-- Study **closed early** due to futility at pre-planned interim analysis
-- **No significant iDFS benefit** with tucatinib + T-DM1 vs T-DM1 alone
-- Possible explanations:
-  - T-DM1 backbone may have a **ceiling effect**
-  - Patient population may differ from metastatic setting
-  - Tucatinib tolerability in adjuvant setting
-- Ongoing debate on combination strategies in early-stage disease
-
-> CompassHER2 showed that adding tucatinib to T-DM1 did not improve iDFS — metastatic efficacy does not always translate to adjuvant benefit.
-
-<cite>Tolaney SM et al. ASCO 2025</cite>
-
-<!--
-這張投影片要強調：CompassHER2 因無效在期中分析時提前終止。Tucatinib 加入 T-DM1 未能改善 iDFS（無侵犯性疾病存活，invasive Disease-Free Survival）。這提醒我們轉移性治療的成功不一定能直接複製到輔助治療。提示下一頁：HER2CLIMB-05。
--->
-
----
-
-## HER2CLIMB-05 — Trial Design
-
-- **Phase III, randomized**
-- Tucatinib + trastuzumab + capecitabine vs trastuzumab + capecitabine
-- **Population**: HER2+ MBC with brain metastases (prior ≥1 HER2-directed therapy)
-- Based on HER2CLIMB platform
-- **Primary endpoint**: PFS
-- Key secondary: OS, CNS-PFS, CNS-ORR
-
-> HER2CLIMB-05 tested whether adding a CNS-penetrant TKI could improve outcomes in patients with HER2+ MBC and brain metastases.
-
-<cite>Murthy R et al. Lancet Oncol 2025</cite>
-
-<!--
-這張投影片要強調：HER2CLIMB-05 是基於 HER2CLIMB 平台的 phase III 試驗，測試 tucatinib 加入 trastuzumab + capecitabine 對有腦轉移的 HER2 陽性轉移性乳癌患者的療效。提示下一頁：HER2CLIMB-05 結果。
--->
-
----
-
-## HER2CLIMB-05 — Key Results
-
-<div class="grid grid-cols-2 gap-8">
-<div>
-
-### Efficacy
-
-- **Median PFS**: **24.9 vs 16.3 mo** (HR 0.60; 95% CI 0.44–0.83)
-- **CNS-PFS**: significantly improved
-- **OS**: favorable trend
-
-</div>
-<div>
-
-### CNS Activity
-
-<!-- prettier-ignore -->
-| Endpoint | Tucatinib arm | Control |
-|---|---|---|
-| CNS-ORR (active brain mets) | 47% | 20% |
-| CNS-PFS | HR 0.44 | — |
-| 1-yr CNS-PFS | 63% | 33% |
-
-</div>
-</div>
-
-> HER2CLIMB-05 confirmed tucatinib's robust CNS activity — raising the question of whether TKIs could prevent brain metastases in the adjuvant setting.
-
-<cite>Murthy R et al. Lancet Oncol 2025</cite>
-
-<!--
-這張投影片要強調：HER2CLIMB-05 中 tucatinib 組合方案的中位 PFS（無惡化存活，Progression-Free Survival）為 24.9 vs 16.3 個月，CNS（中樞神經系統）反應率明顯較高。這引發了 TKI（酪氨酸激酶抑制劑）在輔助治療中預防腦轉移的可能性。提示下一頁：原始圖表。
--->
-
----
-
-## TKI Landscape — Trial Summary
+## TKI Landscape in HER2+ Breast Cancer
 
 ```mermaid
 graph LR
@@ -780,34 +752,16 @@ graph LR
     A --> C["Adjuvant"]
     A --> D["Neoadjuvant"]
     B --> E["<b>Tucatinib</b> ✓"]
-    C --> F["Neratinib ✓ Tucatinib ✗ Lapatinib ✗"]
+    C --> F["<b>Neratinib</b> ✓  Tucatinib ✗  Lapatinib ✗"]
     D --> G["<b>Pyrotinib</b> ✓"]
     style A fill:#3d6869,color:#fff,stroke:none
 ```
 
-> Mixed results across settings — metastatic and CNS activity are strong, but adjuvant benefit remains elusive for most TKIs.
-
-<cite>Murthy RK et al. NEJM 2020; Baselga J et al. Lancet 2012; Martin M et al. Lancet Oncol 2017</cite>
-
-<!--
-這張投影片要強調：TKI（酪氨酸激酶抑制劑）在 HER2 陽性乳癌中各個試驗的結果總覽——轉移性和 CNS（中樞神經系統）活性很好，但輔助治療的結果有喜有憂。提示下一頁：TKI 的整體定位與未來方向。
--->
-
----
-
-## TKI Landscape — Key Takeaways
-
-- **TKIs in adjuvant setting**: mixed results — not a universal add-on
-- Best evidence: **neratinib** in extended adjuvant (HR+, delayed start)
-- **CNS-penetrant TKIs** may have niche role for brain metastasis prevention
-- Future: **biomarker-selected populations** for TKI intensification?
-
-> TKIs remain most impactful in the metastatic and CNS-active settings; their adjuvant role requires more precise patient selection.
-
-<cite>Murthy RK et al. NEJM 2020; Martin M et al. Lancet Oncol 2017</cite>
+- Adjuvant: only **neratinib** works (HR+, ≤1 yr from H)
+- Metastatic ≠ adjuvant (CompassHER2: tucatinib futility)
 
 <!--
-這張投影片要強調：TKI（酪氨酸激酶抑制劑）目前在輔助治療中尚無廣泛適用的角色，最有價值的方向是 CNS（中樞神經系統）穿透性和生物標記選擇的族群。需要更精準的患者選擇。提示下一頁：進入 Neratinib 和去強化策略。
+這張投影片要強調：TKI 在輔助治療中只有 neratinib 有正面證據。轉移性療效不等於輔助治療獲益。提示下一頁：Neratinib 和去強化策略。
 -->
 
 ---
@@ -820,23 +774,58 @@ graph LR
 
 ---
 
-## ExteNET — Trial Design & Results
+## ExteNET — Trial Design
 
-- **Phase III**: neratinib × 1 yr vs placebo after trastuzumab-based adjuvant
-- **N = 2,840**
-- **8-yr iDFS**: HR 0.78 (95% CI 0.64–0.96)
-- Overall absolute benefit: **3.4%** at 8 yr
-- **HR-positive**: iDFS HR 0.60 — **7.4% absolute benefit**
-- **HR-negative**: no significant benefit
-- **≤1 yr from trastuzumab**: greater benefit
-- **>1 yr from trastuzumab**: diminished benefit
+<div class="grid grid-cols-2 gap-4">
+<div>
 
-> ExteNET showed that extended adjuvant neratinib benefits primarily HR-positive patients who start within 1 year of completing trastuzumab.
+**Inclusion / Patient Characteristics**
 
-<cite>Martin M et al. Lancet Oncol 2017; Chan A et al. JAMA Oncol 2021 (8-yr update)</cite>
+- Randomized, double-blind, **phase III**
+- Women ≥18 yr, stage 1–3 HER2+ BC
+- Completed neoadjuvant/adjuvant trastuzumab ≤2 yr before enrollment
+- **N = 2,840** at 495 centers globally
+
+</div>
+<div>
+
+**Treatment Arms (12 months)**
+
+- **Neratinib** 240 mg/day PO × 1 yr
+- **Placebo** × 1 yr
+- Stratified by HR status, nodal status, prior trastuzumab regimen
+- Primary endpoint: **iDFS**
+
+</div>
+</div>
+
+<cite>Martin M et al. Lancet Oncol 2017 ([DOI](https://doi.org/10.1016/S1470-2045(16)30632-3))</cite>
 
 <!--
-這張投影片要強調：ExteNET 顯示 neratinib 延伸輔助治療在 HR 陽性亞群有 7.4% 的絕對 iDFS（無侵犯性疾病存活，invasive Disease-Free Survival）獲益，但 HR 陰性無顯著獲益。開始時間越接近 trastuzumab 結束效果越好。提示下一頁：原始圖表。
+這張投影片要強調：ExteNET 是大型隨機雙盲 phase III 試驗，納入 2,840 位完成 trastuzumab 輔助治療的 HER2 陽性乳癌患者，測試 neratinib 延伸輔助治療 1 年的效果。提示下一頁：療效。
+-->
+
+---
+
+## ExteNET — Efficacy
+
+<!-- prettier-ignore -->
+| Subgroup | 5-yr iDFS benefit | HR (95% CI) | 8-yr OS benefit |
+|---|---|---|---|
+| **Overall** | 3.4% | 0.78 (0.64–0.96) | NS |
+| **HR+** | 5.1% | 0.49 (0.31–0.75) | NS |
+| **HR−** | NS | 0.93 (0.60–1.43) | NS |
+| **Node-positive** | — | 0.60 (0.42–0.85) | — |
+| **HR+, residual disease post-NAC** | **7.4%** | — | **9.1%** |
+| **HR+, ≤1 yr from H** | 5.1% | — | 2.1% |
+
+- **Best candidates**: HR+, node-positive, residual disease after NAC, started ≤1 yr from trastuzumab
+- 8-yr OS in overall population: **not significantly different**
+
+<cite>Chan A et al. JAMA Oncol 2021; Saura C et al. Clin Breast Cancer 2020</cite>
+
+<!--
+這張投影片要強調：ExteNET 的獲益高度集中於特定亞群——HR 陽性、淋巴結陽性、術前治療後有殘留病灶、且在 trastuzumab 結束 1 年內開始治療的患者。其中 HR+/殘留病灶亞群的 8 年 OS 獲益高達 9.1%。整體族群的 OS 無顯著差異。提示下一頁：原始圖表。
 -->
 
 ---
@@ -853,27 +842,63 @@ graph LR
 
 ---
 
-## ExteNET — Clinical Application
+## ExteNET — Safety & Clinical Application
+
+- **Diarrhea** (any): 95% vs 35% placebo; **G3+**: ~40% → **~17% with loperamide prophylaxis**
+- Nausea 43%, vomiting 26%, fatigue 27%
+- Discontinuation due to AE: **27%** vs 3%
+
+**Patient Selection**
 
 ```mermaid
 graph LR
-    A["<b>Post-H patient</b>"] --> B{"HR+?"}
-    B -->|"Yes"| C{"≤1 yr from H?"}
-    B -->|"No"| D["Not a candidate"]
-    C -->|"Yes"| E["<b>Neratinib</b> × 1 yr"]
-    C -->|"No"| D
+    A["<b>Post-H patient</b>"] --> B{"≤1 yr from H?"}
+    B -->|"No"| F["Not a candidate"]
+    B -->|"Yes"| C{"HR+?"}
+    C -->|"No"| F
+    C -->|"Yes"| D{"Node+ or residual dz?"}
+    D -->|"Yes"| E["<b>Neratinib</b> × 1 yr"]
+    D -->|"No"| G["Consider risk/benefit"]
     style A fill:#3d6869,color:#fff,stroke:none
 ```
-
-- **Diarrhea management** critical: G3 ~40% without prophylaxis → ~17% with loperamide
-- Not widely adopted due to GI toxicity and narrow population
-
-> Adoption has been limited by diarrhea and the availability of alternative strategies — patient selection is key.
 
 <cite>Chan A et al. JAMA Oncol 2021</cite>
 
 <!--
-這張投影片要強調：Neratinib 已獲 FDA（美國食品藥物管理局）核准用於延伸輔助治療，但腹瀉是主要障礙。需要 loperamide 預防和劑量遞增策略。臨床上使用範圍有限。提示下一頁：生物標記導向的去強化。
+這張投影片要強調：Neratinib 最主要的不良反應是腹瀉，G3 以上達 40%（無預防時），但使用 loperamide 預防可降至 17%。停藥率 27%，遠高於安慰劑。臨床上需嚴格篩選 HR+ 且在 trastuzumab 結束 1 年內的患者。提示下一頁：機轉討論。
+-->
+
+---
+
+## ExteNET — Why HR+ Benefits More & Why Timing Matters
+
+<div class="grid grid-cols-2 gap-4">
+<div>
+
+**HR+ subgroup: synergistic blockade**
+
+- HER2 and ER pathways are not independent — **bidirectional crosstalk** enables escape
+- When trastuzumab suppresses HER2, HR+ cells upregulate ER signaling to survive
+- Neratinib (irreversible pan-HER TKI) + endocrine therapy = **dual pathway shutdown**
+- In HR− patients, residual cells may harbor non-HER2 escape mutations → lower marginal benefit
+
+</div>
+<div>
+
+**Earlier start = greater benefit**
+
+- Adjuvant goal: eradicate **minimal residual disease (MRD)** before it evolves
+- Within 1 yr of completing trastuzumab: residual cells are still weakened and few → neratinib delivers the "finishing blow"
+- Delayed start: residual cells may proliferate and acquire new resistance mechanisms
+- HER2+ recurrence peaks at **years 2–3** — early treatment intercepts this high-risk window
+
+</div>
+</div>
+
+- **Key data point**: HR+ patients starting within 1 yr — 5-yr absolute iDFS benefit **≥ 7.4%**
+
+<!--
+這張投影片要強調：ExteNET 中 HR+ 亞群獲益最大的原因是 neratinib 阻斷了 ER/HER2 之間的交互代償（crosstalk），與內分泌治療產生協同效應。早期開始治療（< 1 年）的獲益更大，因為微小殘留病灶（MRD）在 trastuzumab 停藥後尚未完全恢復，是清除的最佳時機。HER2+ 乳癌復發高峰在診斷後 2-3 年，越接近此窗口給藥，攔截效果越好。提示下一頁：生物標記導向的去強化策略。
 -->
 
 ---
@@ -968,8 +993,7 @@ graph LR
 ### Practice-Changing Updates
 
 5. **DESTINY-Breast05**: T-DXd > T-DM1 for non-pCR (HR 0.47, iDFS 90.6% vs 80.3%) — **new standard**
-6. **HER2CLIMB-05**: tucatinib CNS activity (PFS 24.9 vs 16.3 mo) — implications for prevention
-7. **Biomarker-guided** approaches (RCB, ctDNA, HER2DX) are reshaping risk stratification
+6. **Biomarker-guided** approaches (RCB, ctDNA, HER2DX) are reshaping risk stratification
 
 </div>
 </div>
