@@ -1,8 +1,8 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/adj-HER2-pos-breast-cancer/',
+  base: '/',
   server: {
-    allowedHosts: ['hsieh-tingmac-mini.tail33af84.ts.net'],
+    allowedHosts: ['macbook-air.tail33af84.ts.net'],
   },
 })

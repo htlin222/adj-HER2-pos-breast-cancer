@@ -46,7 +46,7 @@ An Evolving Landscape — 2026 Update
 <cite>Slamon DJ et al. NEJM 2001; Swain SM et al. NEJM 2015</cite>
 
 <!--
-這張投影片要強調：HER2 陽性乳癌佔所有乳癌的 15-20%，在 anti-HER2 治療出現前預後很差，但如今 10 年存活率已超過 80%。治療決策取決於分期和對前導性治療的反應。提示下一頁：目前的治療演算法。
+這張投影片要強調：HER2 陽性乳癌佔所有乳癌的 15-20%，在 anti-HER2 治療出現前預後很差，但如今 10 年 OS（整體存活，Overall Survival）已超過 80%。治療決策取決於分期和對前導性治療的反應。提示下一頁：目前的治療演算法。
 -->
 
 ---
@@ -74,7 +74,7 @@ graph LR
 <cite>NCCN Guidelines Breast Cancer v2.2025</cite>
 
 <!--
-這張投影片要強調：早期 HER2 陽性乳癌的治療策略依風險分層——低風險用 APT，較高風險先做 TCHP 再依 pCR 與否決定後續治療。提示下一頁：進入標準輔助治療架構。
+這張投影片要強調：早期 HER2 陽性乳癌的治療策略依風險分層——低風險用 APT，較高風險先做 TCHP 再依 pCR（病理完全反應，pathological Complete Response）與否決定後續治療。提示下一頁：進入標準輔助治療架構。
 -->
 
 ---
@@ -112,7 +112,7 @@ graph LR
 <cite>Romond EH et al. NEJM 2005 — Figure 2A: Kaplan–Meier Estimates of Disease-Free Survival</cite>
 
 <!--
-這張投影片要強調：這是 NSABP B-31 / NCCTG N9831 的原始 DFS Kaplan-Meier 曲線，視覺化呈現 trastuzumab 帶來的顯著獲益。請替換為原始圖片。提示下一頁：加上 pertuzumab 的雙標靶策略。
+這張投影片要強調：這是 NSABP B-31 / NCCTG N9831 的原始 DFS（無疾病存活，Disease-Free Survival）Kaplan-Meier 曲線，視覺化呈現 trastuzumab 帶來的顯著獲益。請替換為原始圖片。提示下一頁：加上 pertuzumab 的雙標靶策略。
 -->
 
 ---
@@ -149,7 +149,7 @@ graph LR
 <cite>von Minckwitz G et al. NEJM 2017; Piccart M et al. Lancet Oncol 2024</cite>
 
 <!--
-這張投影片要強調：APHINITY 試驗證實 pertuzumab 加入 trastuzumab 在淋巴結陽性患者有約 4.9% 的絕對 iDFS 獲益，但在淋巴結陰性患者幾乎沒有額外好處。提示下一頁：原始圖表。
+這張投影片要強調：APHINITY 試驗證實 pertuzumab 加入 trastuzumab 在淋巴結陽性患者有約 4.9% 的絕對 iDFS（無侵犯性疾病存活，invasive Disease-Free Survival）獲益，但在淋巴結陰性患者幾乎沒有額外好處。提示下一頁：原始圖表。
 -->
 
 ---
@@ -161,7 +161,7 @@ graph LR
 <cite>von Minckwitz G et al. NEJM 2017 — Figure 2B: iDFS in Node-Positive Disease</cite>
 
 <!--
-這張投影片要強調：這是 APHINITY 試驗在淋巴結陽性亞群的 iDFS Kaplan-Meier 曲線，清楚呈現 pertuzumab 加入後的獲益。請替換為原始圖片。提示下一頁：低風險族群的去強化策略。
+這張投影片要強調：這是 APHINITY 試驗在淋巴結陽性亞群的 iDFS（無侵犯性疾病存活，invasive Disease-Free Survival）Kaplan-Meier 曲線，清楚呈現 pertuzumab 加入後的獲益。請替換為原始圖片。提示下一頁：低風險族群的去強化策略。
 -->
 
 ---
@@ -180,7 +180,197 @@ graph LR
 <cite>Tolaney SM et al. JCO 2019; Tolaney SM et al. JCO 2023 (10-yr update)</cite>
 
 <!--
-這張投影片要強調：APT 試驗證實小腫瘤、淋巴結陰性的 HER2 陽性乳癌可以用去強化方案（paclitaxel + trastuzumab），7 年 iDFS 達 93%，避免了 anthracycline 的毒性。提示下一頁：KATHERINE 試驗改變了殘留疾病的處理方式。
+這張投影片要強調：APT 試驗證實小腫瘤、淋巴結陰性的 HER2 陽性乳癌可以用去強化方案（paclitaxel + trastuzumab），7 年 iDFS（無侵犯性疾病存活，invasive Disease-Free Survival）達 93%，避免了 anthracycline 的毒性。提示下一頁：KATHERINE 試驗改變了殘留疾病的處理方式。
+-->
+
+---
+
+## NeoSphere — Trial Design
+
+<div class="grid grid-cols-2 gap-4">
+<div>
+
+**Inclusion Criteria**
+
+- Stage II–III, operable or locally advanced HER2+ breast cancer
+- **N = 417**, randomized to 4 arms
+- No prior systemic therapy
+
+</div>
+<div>
+
+**Neoadjuvant Arms (4 cycles)**
+
+- **A:** Docetaxel + trastuzumab (TH)
+- **B:** Docetaxel + trastuzumab + pertuzumab (THP)
+- **C:** Trastuzumab + pertuzumab (HP, no chemo)
+- **D:** Docetaxel + pertuzumab (TP)
+
+</div>
+</div>
+
+- Primary endpoint: **pCR** (ypT0/is) in the breast
+
+<!--
+NeoSphere was the pivotal phase II trial that established the rationale for adding pertuzumab to trastuzumab-based neoadjuvant therapy. The chemo-free arm (HP) achieved a modest but notable pCR rate. Next slide: results.
+-->
+
+---
+
+## NeoSphere — Results
+
+```mermaid
+graph LR
+    A["<b>TH</b><br/>pCR 29.0%"] ~~~ B["<b>THP</b><br/>pCR 45.8%"]
+    B ~~~ C["<b>HP</b><br/>pCR 16.8%"]
+    C ~~~ D["<b>TP</b><br/>pCR 24.0%"]
+    style B fill:#3d6869,color:#fff,stroke:none
+```
+
+- **THP (dual blockade + chemo)** achieved the highest pCR — **45.8% vs 29.0%** for TH alone (p=0.014)
+- Adding pertuzumab to docetaxel + trastuzumab nearly doubled pCR in HR− subgroup
+- Chemo-free arm (HP): pCR 16.8% — proof of concept for anti-HER2 activity without chemo
+- No significant increase in cardiac toxicity with dual blockade
+- 5-yr PFS and OS: trends favoring THP, but not powered for long-term endpoints
+
+<cite>Gianni L et al. Lancet Oncol 2012; Gianni L et al. Lancet Oncol 2016 (5-yr update)</cite>
+
+<!--
+NeoSphere established that pertuzumab + trastuzumab + docetaxel achieves the highest pCR rate, forming the basis for the TCHP regimen. The chemo-free HP arm showed that dual anti-HER2 blockade alone has meaningful activity. This led to accelerated FDA approval of pertuzumab in the neoadjuvant setting. Next slide: KRISTINE trial.
+-->
+
+---
+
+## TRYPHAENA — Cardiac Safety of Pertuzumab Regimens
+
+<div class="grid grid-cols-2 gap-4">
+<div>
+
+**Inclusion Criteria**
+
+- Stage II–III, operable HER2+ breast cancer
+- **N = 225**, randomized to 3 arms
+- Primary endpoint: cardiac safety (LVEF decline, symptomatic CHF)
+
+</div>
+<div>
+
+**Neoadjuvant Arms (6 cycles)**
+
+- **Arm A:** FEC×3 → THP×3 (sequential)
+- **Arm B:** FEC+HP×3 → THP×3 (concurrent)
+- **Arm C:** **TCHP×6** (docetaxel, carboplatin, trastuzumab, pertuzumab)
+
+</div>
+</div>
+
+- Cardiac events low across all arms (≤5.6% LVEF decline ≥10 points)
+- **pCR rates: 57–66%** — Arm C (TCHP) achieved **63.6%**
+- Established **TCHP as a safe, anthracycline-free, platinum-based dual-blockade regimen**
+
+<cite>Schneeweiss A et al. Ann Oncol 2013</cite>
+
+<!--
+這張投影片要強調：TRYPHAENA 是承先啟後的樞紐試驗。承先：NeoSphere 證明雙標靶（H+P）+ docetaxel（THP）可提升 pCR，但未加 carboplatin，且加藥勢必增加心毒性疑慮。TRYPHAENA 證明加入 carboplatin 的 TCHP 方案心臟安全性可接受、pCR 高達 63.6%、且不需 anthracycline，正式確立 TCHP 為標準術前方案。啟後：KRISTINE 以 TCHP 為標準對照，測試 T-DM1+P 能否取代（結果不行）；KATHERINE 則處理 TCHP 後仍有殘留病灶的患者（換用 T-DM1）。沒有 TRYPHAENA 確立 TCHP 的安全性與療效，後續兩個試驗的前提都不成立。提示下一頁：pCR 原始圖表。
+-->
+
+---
+
+## TRYPHAENA — pCR in ITT Population
+
+<img src="/images/papers/tryphaena-pcr.png" alt="TRYPHAENA Figure — pCR rates in ITT population" style="max-height: 400px; width: auto; margin: 0 auto; display: block;" />
+
+<cite>Schneeweiss A et al. Ann Oncol 2013 — Pathological complete response in the ITT population</cite>
+
+<!--
+這張投影片要強調：ITT 族群的 pCR 率及 95% 信賴區間，分別以 ypT0/is、ypT0/is ypN0、ypT0、ypT0 ypN0 四種定義呈現，並依荷爾蒙受體狀態（ER-/PgR-陽性 vs ER-/PgR-陰性）分組。長條圖內顯示達到 pCR 的確切人數（n/N）。ypT0/is = 乳房無侵襲性殘留腫瘤（允許 DCIS/LCIS）；ypT0/is ypN0 = 乳房及淋巴結均無侵襲性殘留；ypT0 = 乳房無侵襲性及非侵襲性殘留；ypT0 ypN0 = 乳房及淋巴結均無任何殘留。FEC = 5-fluorouracil、epirubicin、cyclophosphamide；H = trastuzumab；P = pertuzumab；T = docetaxel；TCH = docetaxel、carboplatin、trastuzumab。提示下一頁：KRISTINE 試驗。
+-->
+
+---
+
+## KRISTINE — Trial Design
+
+<div class="grid grid-cols-2 gap-4">
+<div>
+
+**Inclusion Criteria**
+
+- Stage II–III HER2+ breast cancer
+- Operable, **N = 444**
+- No prior systemic therapy
+
+</div>
+<div>
+
+**Randomization (Neoadjuvant)**
+
+- **Arm A:** TCH+P (docetaxel, carboplatin, trastuzumab, pertuzumab) × 6 cy
+- **Arm B:** T-DM1 + P (trastuzumab emtansine + pertuzumab) × 6 cy
+- Primary endpoint: **pCR** (ypT0/is ypN0)
+
+</div>
+</div>
+
+<!--
+這張投影片要強調：KRISTINE 是一個在術前治療階段比較「化療+雙標靶（TCHP）」與「T-DM1+P（去化療方案）」的隨機 phase III 試驗。目的是測試能否用 ADC 取代傳統化療達到相同的 pCR（病理完全反應）率。提示下一頁：KRISTINE 結果。
+-->
+
+---
+
+## KRISTINE — Results
+
+- **pCR rate:** TCHP **56.0%** vs T-DM1+P **44.4%** (difference −11.3%, p=0.016)
+- TCHP achieved significantly higher pCR — **T-DM1+P cannot replace chemo + dual anti-HER2**
+- HR−/HER2+ subgroup: difference even larger (−19.0%)
+- HR+/HER2+ subgroup: difference −8.6%
+- T-DM1+P arm had fewer grade ≥3 AEs (fewer haematologic toxicities)
+- **3-yr EFS:** similar between arms (~90%), suggesting non-pCR patients could still benefit from subsequent therapy
+
+<!--
+這張投影片要強調：KRISTINE 結果顯示 T-DM1+P 的 pCR 率顯著低於 TCHP，證明在術前治療階段 ADC 無法完全取代化療+雙標靶。但毒性較低，且長期預後相近，暗示殘留疾病患者可透過後續治療（如 KATHERINE 策略）彌補。提示下一頁：原始圖表。
+-->
+
+---
+
+## KRISTINE — pCR by Subgroup
+
+<img src="/images/papers/kristine-pcr.png" alt="Figure 2 from KRISTINE trial — pCR rates" style="max-height: 400px; width: auto; margin: 0 auto; display: block;" />
+
+<cite>Hurvitz SA et al. Lancet Oncol 2018 — Figure 2: Pathological Complete Response</cite>
+
+<!--
+這張投影片要強調：KRISTINE 試驗的 pCR 結果圖——整體與 HR 次族群分析均顯示 TCHP 的 pCR 率優於 T-DM1+P。此結果確立了化療+雙標靶仍是術前治療的標準，也為 KATHERINE 試驗中 non-pCR 患者轉用 T-DM1 提供了背景脈絡。提示下一頁：KATHERINE 試驗收案條件。
+-->
+
+---
+
+## KATHERINE — Population & Inclusion
+
+<div class="grid grid-cols-2 gap-4">
+<div>
+
+**Inclusion Criteria**
+
+- cT1-4 / N0-3 HER2+ breast cancer
+- Completed neoadjuvant chemo + **trastuzumab-containing** regimen
+- **≥ 6 cycles (≥ 18 weeks)** of taxane ± anthracycline
+- **Key criterion:** residual invasive disease at surgery (**non-pCR**)
+
+</div>
+<div>
+
+**Prior anti-HER2 not limited to dual blockade**
+
+- Single-target (e.g. TCH) ✔
+- Dual-target (e.g. TCHP) ✔
+- Core logic: **residual disease = current regimen insufficient → switch agent**
+- Subgroup analysis: benefit consistent regardless of prior H or H+P
+
+</div>
+</div>
+
+<!--
+這張投影片要強調：KATHERINE 試驗的收案條件並不強制要求術前使用雙標靶（TCHP），只要含 trastuzumab 即可。次族群分析顯示，無論術前為單標靶或雙標靶，T-DM1 的獲益一致。臨床關鍵在於「有無殘留病灶」，而非術前標靶方案的選擇。提示下一頁：試驗結果。
 -->
 
 ---
@@ -205,7 +395,7 @@ graph LR
 <cite>von Minckwitz G et al. NEJM 2019; Loibl S et al. JCO 2024 (7-yr update)</cite>
 
 <!--
-這張投影片要強調：KATHERINE 是第一個根據前導性治療反應來調整輔助治療的策略。non-pCR 患者換用 T-DM1 後 7 年 iDFS 改善 13.7%，成為標準治療。提示下一頁：原始圖表。
+這張投影片要強調：KATHERINE 是第一個根據前導性治療反應來調整輔助治療的策略。non-pCR（病理完全反應，pathological Complete Response）患者換用 T-DM1 後 7 年 iDFS（無侵犯性疾病存活，invasive Disease-Free Survival）改善 13.7%，成為標準治療。提示下一頁：原始圖表。
 -->
 
 ---
@@ -217,7 +407,7 @@ graph LR
 <cite>von Minckwitz G et al. NEJM 2019 — Figure 1A: Invasive Disease–Free Survival (ITT Population)</cite>
 
 <!--
-這張投影片要強調：這是 KATHERINE 試驗的原始 iDFS Kaplan-Meier 曲線，視覺化呈現 T-DM1 相較於 trastuzumab 的顯著獲益。請替換為原始圖片。提示下一頁：進入 DESTINY-Breast05。
+這張投影片要強調：這是 KATHERINE 試驗的原始 iDFS（無侵犯性疾病存活，invasive Disease-Free Survival）Kaplan-Meier 曲線，視覺化呈現 T-DM1 相較於 trastuzumab 的顯著獲益。請替換為原始圖片。提示下一頁：進入 DESTINY-Breast05。
 -->
 
 ---
@@ -245,7 +435,7 @@ graph LR
 <cite>Curigliano G et al. NEJM 2025</cite>
 
 <!--
-這張投影片要強調：DB-05 是第一個在 KATHERINE 建立的 non-pCR 標準上直接挑戰 T-DM1 的隨機 phase III 試驗，納入 1,453 位有殘留疾病的患者。提示下一頁：試驗設計圖。
+這張投影片要強調：DB-05 是第一個在 KATHERINE 建立的 non-pCR（病理完全反應，pathological Complete Response）標準上直接挑戰 T-DM1 的隨機 phase III 試驗，納入 1,453 位有殘留疾病的患者。提示下一頁：試驗設計圖。
 -->
 
 ---
@@ -266,7 +456,7 @@ graph LR
 <cite>Curigliano G et al. NEJM 2025</cite>
 
 <!--
-這張投影片要強調：DB-05 的試驗設計圖——殘留疾病患者經分層後隨機分配到 T-DXd 或 T-DM1，主要終點為 iDFS。提示下一頁：關鍵結果。
+這張投影片要強調：DB-05 的試驗設計圖——殘留疾病患者經分層後隨機分配到 T-DXd 或 T-DM1，主要終點為 iDFS（無侵犯性疾病存活，invasive Disease-Free Survival）。提示下一頁：關鍵結果。
 -->
 
 ---
@@ -306,7 +496,7 @@ graph LR
 <cite>Curigliano G et al. NEJM 2025</cite>
 
 <!--
-這張投影片要強調：DB-05 的核心結果——T-DXd 相較於 T-DM1，3 年 iDFS 從 80.3% 提升到 90.6%，HR 0.47，絕對獲益超過 10%。遠端復發從 12.1% 降到 5.3%，CNS 復發也明顯減少。提示下一頁：原始圖表。
+這張投影片要強調：DB-05 的核心結果——T-DXd 相較於 T-DM1，3 年 iDFS（無侵犯性疾病存活，invasive Disease-Free Survival）從 80.3% 提升到 90.6%，HR（風險比，Hazard Ratio）0.47，絕對獲益超過 10%。遠端復發從 12.1% 降到 5.3%，CNS（中樞神經系統）復發也明顯減少。提示下一頁：原始圖表。
 -->
 
 ---
@@ -318,7 +508,7 @@ graph LR
 <cite>Curigliano G et al. NEJM 2025</cite>
 
 <!--
-這張投影片要強調：這是 DB-05 的 iDFS Kaplan-Meier 曲線。請替換為原始圖片。提示下一頁：亞族群分析。
+這張投影片要強調：這是 DB-05 的 iDFS（無侵犯性疾病存活，invasive Disease-Free Survival）Kaplan-Meier 曲線。請替換為原始圖片。提示下一頁：亞族群分析。
 -->
 
 ---
@@ -392,7 +582,7 @@ graph LR
 <cite>Curigliano G et al. NEJM 2025</cite>
 
 <!--
-這張投影片要強調：T-DXd 的安全性特徵與 T-DM1 不同——更多噁心、脫髮和嗜中性球低下，但血小板低下較少。ILD 是最需要關注的不良反應。提示下一頁：ILD 的詳細討論。
+這張投影片要強調：T-DXd 的安全性特徵與 T-DM1 不同——更多噁心、脫髮和嗜中性球低下，但血小板低下較少。ILD（間質性肺病，Interstitial Lung Disease）是最需要關注的不良反應。提示下一頁：ILD 的詳細討論。
 -->
 
 ---
@@ -418,7 +608,7 @@ graph LR
 <cite>Curigliano G et al. NEJM 2025</cite>
 
 <!--
-這張投影片要強調：ILD 發生率 12.4% 但多為 G1-G2，DB-05 中沒有致死性 ILD。中位發生時間約 5 個月，大多數以類固醇和停藥處理後可改善。在輔助治療中需要積極監測但可控。提示下一頁：FDA 狀態。
+這張投影片要強調：ILD（間質性肺病，Interstitial Lung Disease）發生率 12.4% 但多為 G1-G2，DB-05 中沒有致死性 ILD。中位發生時間約 5 個月，大多數以類固醇和停藥處理後可改善。在輔助治療中需要積極監測但可控。提示下一頁：FDA（美國食品藥物管理局）狀態。
 -->
 
 ---
@@ -438,7 +628,7 @@ graph LR
 <cite>Curigliano G et al. NEJM 2025</cite>
 
 <!--
-這張投影片要強調：DB-05 獲得 FDA 優先審查，預計 T-DXd 將取代 T-DM1 成為 non-pCR 患者的新標準。臨床實務需要建立 ILD 監測和止吐方案。提示下一頁：FDA 時間軸。
+這張投影片要強調：DB-05 獲得 FDA（美國食品藥物管理局）優先審查，預計 T-DXd 將取代 T-DM1 成為 non-pCR（病理完全反應，pathological Complete Response）患者的新標準。臨床實務需要建立 ILD（間質性肺病，Interstitial Lung Disease）監測和止吐方案。提示下一頁：FDA 時間軸。
 -->
 
 ---
@@ -457,7 +647,7 @@ graph LR
 <cite>Curigliano G et al. NEJM 2025</cite>
 
 <!--
-這張投影片要強調：DB-05 從發表到 FDA 優先審查的時間軸，預計 2025 年獲批。提示下一頁：待解的問題。
+這張投影片要強調：DB-05 從發表到 FDA（美國食品藥物管理局）優先審查的時間軸，預計 2025 年獲批。提示下一頁：待解的問題。
 -->
 
 ---
@@ -474,7 +664,7 @@ graph LR
 <cite>Curigliano G et al. NEJM 2025</cite>
 
 <!--
-這張投影片要強調：DB-05 仍有幾個關鍵待解問題——長期 OS、ILD 管理、超高風險患者的策略、以及 T-DXd 之後的治療序列。提示下一頁：進入 DESTINY-Breast11。
+這張投影片要強調：DB-05 仍有幾個關鍵待解問題——長期 OS（整體存活，Overall Survival）、ILD（間質性肺病，Interstitial Lung Disease）管理、超高風險患者的策略、以及 T-DXd 之後的治療序列。提示下一頁：進入 DESTINY-Breast11。
 -->
 
 ---
@@ -482,7 +672,7 @@ graph LR
 # Tucatinib & TKIs
 
 <!--
-這張投影片要強調：小分子 TKI 為 HER2 陽性乳癌的輔助治療提供了另一個維度，特別是針對高風險族群和 CNS 轉移預防。提示下一頁：CompassHER2 試驗。
+這張投影片要強調：小分子 TKI（酪氨酸激酶抑制劑）為 HER2 陽性乳癌的輔助治療提供了另一個維度，特別是針對高風險族群和 CNS（中樞神經系統）轉移預防。提示下一頁：CompassHER2 試驗。
 -->
 
 ---
@@ -502,7 +692,7 @@ graph LR
 <cite>Tolaney SM et al. ASCO 2025</cite>
 
 <!--
-這張投影片要強調：CompassHER2 的設計是在 KATHERINE 的 T-DM1 骨架上加入 tucatinib，針對殘留疾病的高風險患者。Tucatinib 是具有 CNS 穿透性的 HER2 選擇性 TKI。提示下一頁：CompassHER2 結果。
+這張投影片要強調：CompassHER2 的設計是在 KATHERINE 的 T-DM1 骨架上加入 tucatinib，針對殘留疾病的高風險患者。Tucatinib 是具有 CNS（中樞神經系統）穿透性的 HER2 選擇性 TKI（酪氨酸激酶抑制劑）。提示下一頁：CompassHER2 結果。
 -->
 
 ---
@@ -522,7 +712,7 @@ graph LR
 <cite>Tolaney SM et al. ASCO 2025</cite>
 
 <!--
-這張投影片要強調：CompassHER2 因無效在期中分析時提前終止。Tucatinib 加入 T-DM1 未能改善 iDFS。這提醒我們轉移性治療的成功不一定能直接複製到輔助治療。提示下一頁：HER2CLIMB-05。
+這張投影片要強調：CompassHER2 因無效在期中分析時提前終止。Tucatinib 加入 T-DM1 未能改善 iDFS（無侵犯性疾病存活，invasive Disease-Free Survival）。這提醒我們轉移性治療的成功不一定能直接複製到輔助治療。提示下一頁：HER2CLIMB-05。
 -->
 
 ---
@@ -577,7 +767,7 @@ graph LR
 <cite>Murthy R et al. Lancet Oncol 2025</cite>
 
 <!--
-這張投影片要強調：HER2CLIMB-05 中 tucatinib 組合方案的中位 PFS 為 24.9 vs 16.3 個月，CNS 反應率明顯較高。這引發了 TKI 在輔助治療中預防腦轉移的可能性。提示下一頁：原始圖表。
+這張投影片要強調：HER2CLIMB-05 中 tucatinib 組合方案的中位 PFS（無惡化存活，Progression-Free Survival）為 24.9 vs 16.3 個月，CNS（中樞神經系統）反應率明顯較高。這引發了 TKI（酪氨酸激酶抑制劑）在輔助治療中預防腦轉移的可能性。提示下一頁：原始圖表。
 -->
 
 ---
@@ -600,7 +790,7 @@ graph LR
 <cite>Murthy RK et al. NEJM 2020; Baselga J et al. Lancet 2012; Martin M et al. Lancet Oncol 2017</cite>
 
 <!--
-這張投影片要強調：TKI 在 HER2 陽性乳癌中各個試驗的結果總覽——轉移性和 CNS 活性很好，但輔助治療的結果有喜有憂。提示下一頁：TKI 的整體定位與未來方向。
+這張投影片要強調：TKI（酪氨酸激酶抑制劑）在 HER2 陽性乳癌中各個試驗的結果總覽——轉移性和 CNS（中樞神經系統）活性很好，但輔助治療的結果有喜有憂。提示下一頁：TKI 的整體定位與未來方向。
 -->
 
 ---
@@ -617,7 +807,7 @@ graph LR
 <cite>Murthy RK et al. NEJM 2020; Martin M et al. Lancet Oncol 2017</cite>
 
 <!--
-這張投影片要強調：TKI 目前在輔助治療中尚無廣泛適用的角色，最有價值的方向是 CNS 穿透性和生物標記選擇的族群。需要更精準的患者選擇。提示下一頁：進入 Neratinib 和去強化策略。
+這張投影片要強調：TKI（酪氨酸激酶抑制劑）目前在輔助治療中尚無廣泛適用的角色，最有價值的方向是 CNS（中樞神經系統）穿透性和生物標記選擇的族群。需要更精準的患者選擇。提示下一頁：進入 Neratinib 和去強化策略。
 -->
 
 ---
@@ -646,7 +836,7 @@ graph LR
 <cite>Martin M et al. Lancet Oncol 2017; Chan A et al. JAMA Oncol 2021 (8-yr update)</cite>
 
 <!--
-這張投影片要強調：ExteNET 顯示 neratinib 延伸輔助治療在 HR 陽性亞群有 7.4% 的絕對 iDFS 獲益，但 HR 陰性無顯著獲益。開始時間越接近 trastuzumab 結束效果越好。提示下一頁：原始圖表。
+這張投影片要強調：ExteNET 顯示 neratinib 延伸輔助治療在 HR 陽性亞群有 7.4% 的絕對 iDFS（無侵犯性疾病存活，invasive Disease-Free Survival）獲益，但 HR 陰性無顯著獲益。開始時間越接近 trastuzumab 結束效果越好。提示下一頁：原始圖表。
 -->
 
 ---
@@ -683,7 +873,7 @@ graph LR
 <cite>Chan A et al. JAMA Oncol 2021</cite>
 
 <!--
-這張投影片要強調：Neratinib 已獲 FDA 核准用於延伸輔助治療，但腹瀉是主要障礙。需要 loperamide 預防和劑量遞增策略。臨床上使用範圍有限。提示下一頁：生物標記導向的去強化。
+這張投影片要強調：Neratinib 已獲 FDA（美國食品藥物管理局）核准用於延伸輔助治療，但腹瀉是主要障礙。需要 loperamide 預防和劑量遞增策略。臨床上使用範圍有限。提示下一頁：生物標記導向的去強化。
 -->
 
 ---
@@ -704,7 +894,7 @@ graph LR
 <cite>Symmans WF et al. JCO 2017; Prat A et al. Lancet Oncol 2023</cite>
 
 <!--
-這張投影片要強調：目前可用的生物標記包括 pCR、RCB、ctDNA 和 HER2DX，各自提供不同維度的預後資訊。提示下一頁：如何將生物標記整合到精準去強化策略。
+這張投影片要強調：目前可用的生物標記包括 pCR（病理完全反應，pathological Complete Response）、RCB（殘留癌症負荷，Residual Cancer Burden）、ctDNA（循環腫瘤 DNA）和 HER2DX，各自提供不同維度的預後資訊。提示下一頁：如何將生物標記整合到精準去強化策略。
 -->
 
 ---
@@ -747,7 +937,7 @@ graph LR
 <cite>Symmans WF et al. JCO 2017; Prat A et al. Lancet Oncol 2023</cite>
 
 <!--
-這張投影片要強調：用 RCB 和 ctDNA 建立決策樹——RCB-0/I 且 ctDNA 陰性可考慮去強化，RCB-II/III 或 ctDNA 陽性則需要 T-DXd 強化治療。提示下一頁：進入總結。
+這張投影片要強調：用 RCB（殘留癌症負荷，Residual Cancer Burden）和 ctDNA（循環腫瘤 DNA）建立決策樹——RCB-0/I 且 ctDNA 陰性可考慮去強化，RCB-II/III 或 ctDNA 陽性則需要 T-DXd 強化治療。提示下一頁：進入總結。
 -->
 
 ---
@@ -789,7 +979,7 @@ graph LR
 <cite>Curigliano G et al. NEJM 2025; von Minckwitz G et al. NEJM 2019; Tolaney SM et al. JCO 2019</cite>
 
 <!--
-這張投影片要強調：重點回顧——標準架構仍以 trastuzumab 為基礎，APHINITY 和 KATHERINE 各有其角色。DB-05 是最大突破，T-DXd 將成為 non-pCR 新標準。生物標記將引導未來的精準去強化。提示下一頁：整合治療演算法。
+這張投影片要強調：重點回顧——標準架構仍以 trastuzumab 為基礎，APHINITY 和 KATHERINE 各有其角色。DB-05 是最大突破，T-DXd 將成為 non-pCR（病理完全反應，pathological Complete Response）新標準。生物標記將引導未來的精準去強化。提示下一頁：整合治療演算法。
 -->
 
 ---
@@ -817,7 +1007,7 @@ graph LR
 <cite>NCCN Guidelines v2.2025; Curigliano G et al. NEJM 2025</cite>
 
 <!--
-這張投影片要強調：整合整場演講的治療決策路徑——低風險用 APT，較高風險做 TCHP 後依 pCR 決定 HP 或 T-DXd。提示下一頁：感謝與 Q&A。
+這張投影片要強調：整合整場演講的治療決策路徑——低風險用 APT，較高風險做 TCHP 後依 pCR（病理完全反應，pathological Complete Response）決定 HP 或 T-DXd。提示下一頁：感謝與 Q&A。
 -->
 
 ---
@@ -825,7 +1015,7 @@ graph LR
 # Clinical Tips
 
 <!--
-這張投影片要強調：從循證醫學轉向臨床實務——接下來幾頁整理 T-DM1 和 T-DXd 的劑量、監測、止吐和 ILD 管理要點，作為臨床實用參考。提示下一頁：T-DM1 劑量與監測。
+這張投影片要強調：從循證醫學轉向臨床實務——接下來幾頁整理 T-DM1 和 T-DXd 的劑量、監測、止吐和 ILD（間質性肺病，Interstitial Lung Disease）管理要點，作為臨床實用參考。提示下一頁：T-DM1 劑量與監測。
 -->
 
 ---
@@ -867,7 +1057,7 @@ graph LR
 <cite>KADCYLA FDA label 2026; Verma S et al. NEJM 2012; Wuerstlein R et al. JCO 2021</cite>
 
 <!--
-這張投影片要強調：T-DM1 起始劑量 3.6 mg/kg，EBC 共 14 cycles。血小板是最常見嚴重毒性，亞洲族群發生率明顯更高。Day 7-10 是關鍵監測時間窗。提示下一頁：T-DM1 劑量調整。
+這張投影片要強調：T-DM1 起始劑量 3.6 mg/kg，EBC（早期乳癌，Early Breast Cancer）共 14 cycles。血小板是最常見嚴重毒性，亞洲族群發生率明顯更高。Day 7-10 是關鍵監測時間窗。提示下一頁：T-DM1 劑量調整。
 -->
 
 ---
@@ -888,7 +1078,7 @@ graph LR
 <cite>KADCYLA FDA label 2026</cite>
 
 <!--
-這張投影片要強調：T-DM1 劑量調整要點——血小板 Grade 4 需減量，肝功能 Grade 4 和 ILD 任何等級都要永久停藥，LVEF < 45% 也需要暫停並確認。提示下一頁：T-DXd 劑量與監測。
+這張投影片要強調：T-DM1 劑量調整要點——血小板 Grade 4 需減量，肝功能 Grade 4 和 ILD（間質性肺病，Interstitial Lung Disease）任何等級都要永久停藥，LVEF（左心室射出分率）< 45% 也需要暫停並確認。提示下一頁：T-DXd 劑量與監測。
 -->
 
 ---
@@ -929,7 +1119,7 @@ graph LR
 <cite>Park YH et al. Oncologist 2025; D'Arienzo A et al. EClinicalMedicine 2023</cite>
 
 <!--
-這張投影片要強調：T-DXd 最需要注意的早期毒性是噁心嘔吐（發生率極高），而非血小板低下。ILD 雖然發生時間較晚但可致命，每次回診都要評估呼吸症狀。提示下一頁：T-DXd 劑量調整。
+這張投影片要強調：T-DXd 最需要注意的早期毒性是噁心嘔吐（發生率極高），而非血小板低下。ILD（間質性肺病，Interstitial Lung Disease）雖然發生時間較晚但可致命，每次回診都要評估呼吸症狀。提示下一頁：T-DXd 劑量調整。
 -->
 
 ---
@@ -951,7 +1141,7 @@ graph LR
 <cite>Enhertu FDA label 2025</cite>
 
 <!--
-這張投影片要強調：T-DXd 最關鍵的劑量調整是 ILD——Grade 1 可暫停觀察，Grade 2 以上必須永久停藥並立即給類固醇。這是和 T-DM1 最大的不同之處。提示下一頁：T-DXd 止吐方案。
+這張投影片要強調：T-DXd 最關鍵的劑量調整是 ILD（間質性肺病，Interstitial Lung Disease）——Grade 1 可暫停觀察，Grade 2 以上必須永久停藥並立即給類固醇。這是和 T-DM1 最大的不同之處。提示下一頁：T-DXd 止吐方案。
 -->
 
 ---
@@ -975,7 +1165,7 @@ NCCN 2026 now classifies **T-DXd as High Emetic Risk (>90%)**.
 <cite>NCCN Antiemesis v1.2026</cite>
 
 <!--
-這張投影片要強調：T-DXd 已被歸類為高致吐風險，NCCN 首選四藥方案包含 olanzapine + NK1 RA + 5-HT3 RA + dexamethasone。至少要用三藥方案。提示下一頁：延遲性止吐與實證。
+這張投影片要強調：T-DXd 已被歸類為高致吐風險，NCCN 首選四藥方案包含 olanzapine + NK1 RA（NK1 受體拮抗劑）+ 5-HT3 RA（血清素受體拮抗劑）+ dexamethasone。至少要用三藥方案。提示下一頁：延遲性止吐與實證。
 -->
 
 ---
@@ -1010,7 +1200,7 @@ NCCN 2026 now classifies **T-DXd as High Emetic Risk (>90%)**.
 <cite>Sakai H et al. Ann Oncol 2025; Bianchini G et al. Future Oncol 2025</cite>
 
 <!--
-這張投影片要強調：T-DXd 的延遲性噁心是主要問題，Days 2-4 的止吐不能省略。ERICA 研究支持 olanzapine 的加入，義大利共識也建議至少三藥方案。提示下一頁：ILD 監測實務。
+這張投影片要強調：T-DXd 的延遲性噁心是主要問題，Days 2-4 的止吐不能省略。ERICA 研究支持 olanzapine 的加入，義大利共識也建議至少三藥方案。提示下一頁：ILD（間質性肺病，Interstitial Lung Disease）監測實務。
 -->
 
 ---
@@ -1035,7 +1225,7 @@ graph LR
 <cite>Enhertu FDA label 2025; Kish J et al. JCO 2022; Moy B et al. JCO Oncol Pract 2023</cite>
 
 <!--
-這張投影片要強調：ILD 監測流程——每次回診都要做症狀評估和 pulse oximetry，有症狀立即停藥做 CT。基線胸部 CT 是必須的。Grade 2 以上永久停藥並啟動高劑量類固醇。提示下一頁：感謝與 Q&A。
+這張投影片要強調：ILD（間質性肺病，Interstitial Lung Disease）監測流程——每次回診都要做症狀評估和 pulse oximetry，有症狀立即停藥做 CT。基線胸部 CT 是必須的。Grade 2 以上永久停藥並啟動高劑量類固醇。提示下一頁：感謝與 Q&A。
 -->
 
 ---
